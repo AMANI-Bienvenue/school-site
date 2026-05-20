@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Light Peace Academy - Excellent Working For Success. Join our community of academic excellence, innovation, and personal growth.">
+  <meta name="keywords" content="Light Peace Academy, education, academic excellence, innovative learning, student success, quality education, school community">
+  <meta name="author" content="Light Peace Academy">
+  <meta property="og:title" content="Light Peace Academy - Excellent Working For Success">
+  <meta property="og:description" content="Empowering young minds and shaping futures since 1995. Join our community of excellence, innovation, and growth.">
+  <meta property="og:image" content="images/principal.jpg">
+  <meta property="og:type" content="website">
+  <title>Light Peace Academy - Excellent Working For Success</title>
+
+  <!-- DNS prefetch and preconnect for performance -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Preload critical resources -->
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="preload" href="js/script.js" as="script">
+  <link rel="preload" href="images/principal.jpg" as="image">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Fonts with font-display: swap for faster loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div id="loading-overlay">
+    <div class="loading-content">
+      <div class="loading-spinner"></div>
+      <h3 class="loading-title">Welcome to Light Peace Academy</h3>
+      <p class="loading-subtitle">Loading excellence...</p>
+    </div>
+  </div>
+
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <div class="logo-icon">LPA</div>
+        <h1 class="logo-text">Light Peace Academy</h1>
+      </div>
+      <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li class="dropdown">
+            <a href="#" onclick="return false;">About</a>
+            <ul class="dropdown-menu">
+              <li><a href="history.html">History</a></li>
+              <li><a href="mission.html">Mission</a></li>
+              <li><a href="vision.html">Vision</a></li>
+              <li><a href="values.html">Core Values</a></li>
+              <li><a href="facilities.html">Facilities</a></li>
+              <li><a href="achievements.html">Achievements</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" onclick="return false;">Academic</a>
+            <ul class="dropdown-menu">
+              <li><a href="staff.html">Staff</a></li>
+              <li><a href="timetable.html">Timetable</a></li>
+              <li><a href="homeworks.html">Homeworks</a></li>
+              <li><a href="results.html">Results</a></li>
+              <li><a href="resources.html">Resources</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" onclick="return false;">School Life</a>
+            <ul class="dropdown-menu">
+              <li><a href="events.html">Events</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span>🌟 Welcome to Excellence</span>
+          </div>
+          <h2 class="hero-title">Nurturing Excellence,<br>Inspiring Futures</h2>
+          <p class="hero-subtitle">Empowering young minds and shaping futures since 1995. Join our vibrant community where academic excellence meets personal growth in an environment of innovation and care.</p>
+
+          <!-- Statistics -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number" data-target="500">0</div>
+              <div class="stat-label">Students Excelled</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="95">0</div>
+              <div class="stat-label">Success Rate</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="30">0</div>
+              <div class="stat-label">Years of Excellence</div>
+            </div>
+          </div>
+
+          <div class="btn-group">
+            <a href="about.html" class="btn btn-primary">🎓 Learn More About Us</a>
+            <a href="#features" class="btn btn-secondary">📖 Explore Features</a>
+          </div>
+        </div>
+
+        <div class="slider">
+          <div class="slides">
+            <img src="images/IMG_20250928_212658_606.jpg" alt="Light Peace Academy Campus" class="active" loading="lazy">
+            <img src="images/IMG-20250904-WA0017.jpg" alt="Students in Class" loading="lazy">
+            <img src="images/WhatsApp Image 2025-09-04 at 19.37.26_ef5cf3a4.jpg" alt="School Activities" loading="lazy">
+          </div>
+          <!-- Slider Navigation -->
+          <div class="slider-dots">
+            <button class="slider-dot active" onclick="goToSlide(0)"></button>
+            <button class="slider-dot" onclick="goToSlide(1)"></button>
+            <button class="slider-dot" onclick="goToSlide(2)"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="features">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Why Choose Light Peace Academy?</h2>
+          <p class="section-subtitle">Light Peace Academy is dedicated to providing a nurturing environment where students can thrive academically, socially, and personally. Our commitment to excellence is reflected in our innovative curriculum, dedicated faculty, and state-of-the-art facilities.</p>
+        </div>
+
+        <div class="features">
+          <div class="feature">
+            <div class="feature-icon">🎓</div>
+            <h3 class="feature-title">Quality Education</h3>
+            <p>We offer a comprehensive curriculum designed to prepare students for success in higher education and beyond, combining academic rigor with practical skills.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">👨‍🏫</div>
+            <h3 class="feature-title">Experienced Faculty</h3>
+            <p>Our teachers are passionate educators committed to inspiring and guiding each student's unique potential through personalized attention and mentorship.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🏢</div>
+            <h3 class="feature-title">Modern Facilities</h3>
+            <p>State-of-the-art classrooms, advanced laboratories, sports facilities, and technology resources support a well-rounded educational experience.</p>
+          </div>
+        </div>
+
+        <!-- Achievement Stats -->
+        <div class="achievement-stats">
+          <h3 class="achievement-title">Our Impact in Numbers</h3>
+          <div class="stats-grid">
+            <div class="stat-item-large">
+              <div class="counter" data-target="500">0</div>
+              <div class="stat-title">Happy Students</div>
+              <div class="stat-description">Learning & Growing</div>
+            </div>
+            <div class="stat-item-large">
+              <div class="counter" data-target="50">0</div>
+              <div class="stat-title">Expert Teachers</div>
+              <div class="stat-description">Dedicated Educators</div>
+            </div>
+            <div class="stat-item-large">
+              <div class="counter" data-target="95">0</div>
+              <div class="stat-title">Graduation Rate</div>
+              <div class="stat-description">Success Stories</div>
+            </div>
+            <div class="stat-item-large">
+              <div class="counter" data-target="30">0</div>
+              <div class="stat-title">Years Experience</div>
+              <div class="stat-description">Excellence Since 1995</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-links">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Explore Light Peace Academy</h2>
+          <p class="section-subtitle">Discover the various aspects of our vibrant school community and find everything you need to support your educational journey.</p>
+        </div>
+
+        <div class="links">
+          <a href="staff.html" class="link-card">
+            <div>
+              <div class="link-icon">👨‍🏫</div>
+              <h3 class="link-title">Meet Our Staff</h3>
+              <p class="link-description">Learn about our dedicated teachers and administrators who inspire excellence every day.</p>
+              <div class="link-cta">→ Explore Team</div>
+            </div>
+          </a>
+          <a href="timetable.html" class="link-card">
+            <div>
+              <div class="link-icon">📅</div>
+              <h3 class="link-title">Academic Timetable</h3>
+              <p class="link-description">View our class schedules and plan your day with our comprehensive academic calendar.</p>
+              <div class="link-cta">→ View Schedule</div>
+            </div>
+          </a>
+          <a href="events.html" class="link-card">
+            <div>
+              <div class="link-icon">🎉</div>
+              <h3 class="link-title">School Events</h3>
+              <p class="link-description">Stay updated with our exciting events, celebrations, and community activities.</p>
+              <div class="link-cta">→ View Events</div>
+            </div>
+          </a>
+          <a href="gallery.html" class="link-card">
+            <div>
+              <div class="link-icon">📸</div>
+              <h3 class="link-title">Photo Gallery</h3>
+              <p class="link-description">Browse through memorable moments and capture the spirit of our school community.</p>
+              <div class="link-cta">→ View Gallery</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+          <a href="events.html" class="link-card" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: 40px 30px; border-radius: 20px; text-decoration: none; color: #0277bd; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); box-shadow: 0 8px 25px rgba(0,0,0,0.1); border: 2px solid transparent; display: block;" onmouseover="this.style.transform='translateY(-10px) scale(1.02)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.15)'; this.style.borderColor='#28a745';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.1)'; this.style.borderColor='transparent';">
+            <div style="text-align: center;">
+              <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #28a745, #20c997); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem; color: white;">🎉</div>
+              <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 15px;">School Events</h3>
+              <p style="margin: 0; line-height: 1.6; opacity: 0.8;">Stay updated on upcoming activities, celebrations, and special events in our community.</p>
+              <div style="margin-top: 20px; font-weight: 600; color: #28a745;">→ Upcoming Events</div>
+            </div>
+          </a>
+          <a href="gallery.html" class="link-card" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: 40px 30px; border-radius: 20px; text-decoration: none; color: #0277bd; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); box-shadow: 0 8px 25px rgba(0,0,0,0.1); border: 2px solid transparent; display: block;" onmouseover="this.style.transform='translateY(-10px) scale(1.02)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.15)'; this.style.borderColor='#dc3545';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.1)'; this.style.borderColor='transparent';">
+            <div style="text-align: center;">
+              <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #dc3545, #c82333); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem; color: white;">📸</div>
+              <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 15px;">Photo Gallery</h3>
+              <p style="margin: 0; line-height: 1.6; opacity: 0.8;">Browse memories and highlights from our school community in our interactive gallery.</p>
+              <div style="margin-top: 20px; font-weight: 600; color: #dc3545;">→ View Gallery</div>
+            </div>
+          </a>
+          <a href="resources.html" class="link-card">
+            <div>
+              <div class="link-icon">📚</div>
+              <h3 class="link-title">Educational Resources</h3>
+              <p class="link-description">Access helpful materials, study guides, and resources for students and parents.</p>
+              <div class="link-cta">→ Access Resources</div>
+            </div>
+          </a>
+          <a href="contact.html" class="link-card">
+            <div>
+              <div class="link-icon">📞</div>
+              <h3 class="link-title">Contact Us</h3>
+              <p class="link-description">Get in touch with our school administration for inquiries, admissions, or support.</p>
+              <div class="link-cta">→ Get In Touch</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">What Our Community Says</h2>
+          <p class="section-subtitle">Hear from our students, parents, and alumni about their experiences at Light Peace Academy.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">👩‍👧‍👦</div>
+              <div class="testimonial-info">
+                <cite class="testimonial-name">Sarah Johnson</cite>
+                <span class="testimonial-role">Parent</span>
+              </div>
+            </div>
+            <p class="testimonial-text">"Light Peace Academy has transformed my daughter's confidence and love for learning. The teachers are dedicated and the environment is nurturing."</p>
+            <div class="testimonial-rating">★★★★★</div>
+          </div>
+
+          <div class="testimonial">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">👨‍👩‍👧</div>
+              <div class="testimonial-info">
+                <cite class="testimonial-name">Michael Chen</cite>
+                <span class="testimonial-role">Parent</span>
+              </div>
+            </div>
+            <p class="testimonial-text">"The academic excellence combined with extracurricular activities makes this school outstanding. My son has grown so much here."</p>
+            <div class="testimonial-rating">★★★★★</div>
+          </div>
+
+          <div class="testimonial">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">👩‍🎓</div>
+              <div class="testimonial-info">
+                <cite class="testimonial-name">Emma Rodriguez</cite>
+                <span class="testimonial-role">Alumni</span>
+              </div>
+            </div>
+            <p class="testimonial-text">"Light Peace Academy prepared me not just academically, but also gave me the confidence to pursue my dreams. I'm forever grateful for the foundation I received here."</p>
+            <div class="testimonial-rating">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="footer-title">
+            <span class="footer-icon">🏫</span>
+            Light Peace Academy
+          </h3>
+          <p class="footer-description">Nurturing minds, building futures, and creating leaders of tomorrow through excellence in education and character development.</p>
+          <div class="social-links">
+            <a href="#" class="social-link">📘</a>
+            <a href="#" class="social-link">📷</a>
+            <a href="#" class="social-link">💼</a>
+            <a href="#" class="social-link">📧</a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-section-title">Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="staff.html">Our Staff</a></li>
+            <li><a href="timetable.html">Academic Timetable</a></li>
+            <li><a href="events.html">School Events</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-section-title">Resources</h4>
+          <ul>
+            <li><a href="resources.html">Educational Resources</a></li>
+            <li><a href="#">Student Portal</a></li>
+            <li><a href="#">Parent Portal</a></li>
+            <li><a href="#">Alumni Network</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-section-title">Contact Info</h4>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <div>123 Education Street</div>
+              <div>Kigali, Rwanda</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <a href="tel:+250123456789">+250 123 456 789</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <a href="mailto:info@lightpeaceacademy.edu">info@lightpeaceacademy.edu</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🕒</span>
+            <div>Mon - Fri: 7:00 AM - 5:00 PM</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Light Peace Academy. All rights reserved. | Designed with ❤️ for educational excellence.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

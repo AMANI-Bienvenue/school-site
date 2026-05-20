@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Light Peace Academy's state-of-the-art facilities including modern classrooms, science labs, sports facilities, and learning resources designed for optimal student development.">
+  <meta name="keywords" content="Light Peace Academy facilities, modern classrooms, science labs, sports facilities, library, learning resources">
+  <meta name="author" content="Light Peace Academy">
+  <meta property="og:title" content="Facilities - Light Peace Academy">
+  <meta property="og:description" content="World-Class Facilities - State-of-the-art learning environments designed to inspire excellence and innovation at Light Peace Academy.">
+  <meta property="og:image" content="images/facilities.jpg">
+  <meta property="og:type" content="website">
+  <title>Facilities - Light Peace Academy | World-Class Learning Environments</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div id="loading-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #058fca, #0277bd); z-index: 9999; display: flex; justify-content: center; align-items: center; transition: opacity 0.5s ease;">
+    <div style="text-align: center; color: white;">
+      <div style="width: 60px; height: 60px; border: 4px solid rgba(255,255,255,0.3); border-top: 4px solid #FFD700; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 20px;"></div>
+      <h3 style="font-size: 1.5rem; margin: 0;">Loading Facilities</h3>
+      <p style="opacity: 0.8; margin: 10px 0 0;">Discover our world-class learning spaces...</p>
+    </div>
+  </div>
+
+  <header style="background: linear-gradient(135deg, #0277bd, #058fca); color: white; padding: 15px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <div style="display: flex; align-items: center;">
+        <div style="width: 50px; height: 50px; background: #FFD700; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; font-weight: bold; font-size: 1.2rem; color: #0277bd;">A</div>
+        <h1 style="margin: 0; font-size: 1.8rem; font-weight: 700;">Light Peace Academy</h1>
+      </div>
+      <nav>
+        <ul style="display: flex; list-style: none; margin: 0; padding: 0; gap: 30px;">
+          <li><a href="index.html" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">Home</a></li>
+          <li class="dropdown" style="position: relative;">
+            <a href="#" onclick="return false;" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; cursor: pointer; background: rgba(255,215,0,0.2); border: 2px solid #FFD700;">About</a>
+            <ul class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: white; min-width: 200px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; margin-top: 10px;">
+              <li><a href="history.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">History</a></li>
+              <li><a href="mission.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Mission</a></li>
+              <li><a href="vision.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Vision</a></li>
+              <li><a href="values.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Core Values</a></li>
+              <li><a href="facilities.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease; background: rgba(255,215,0,0.1);">Facilities</a></li>
+              <li><a href="achievements.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; transition: all 0.3s ease;">Achievements</a></li>
+            </ul>
+          </li>
+          <li class="dropdown" style="position: relative;">
+            <a href="#" onclick="return false;" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; cursor: pointer;">Academic</a>
+            <ul class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: white; min-width: 200px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; margin-top: 10px;">
+              <li><a href="staff.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Staff</a></li>
+              <li><a href="timetable.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Timetable</a></li>
+              <li><a href="homeworks.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Homeworks</a></li>
+              <li><a href="results.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Results</a></li>
+              <li><a href="resources.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; transition: all 0.3s ease;">Resources</a></li>
+            </ul>
+          </li>
+          <li class="dropdown" style="position: relative;">
+            <a href="#" onclick="return false;" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; cursor: pointer;">School Life</a>
+            <ul class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: white; min-width: 200px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; margin-top: 10px;">
+              <li><a href="events.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Events</a></li>
+              <li><a href="gallery.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; transition: all 0.3s ease;">Gallery</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease;">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero facilities-hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">World-Class Facilities</h1>
+        <p class="hero-subtitle">State-of-the-art learning environments designed to inspire excellence and innovation</p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">25+</span>
+            <span class="stat-label">Modern Classrooms</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">8</span>
+            <span class="stat-label">Science Labs</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">5</span>
+            <span class="stat-label">Sports Facilities</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facilities Showcase -->
+    <section class="facilities-showcase">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Learning Environments</h2>
+          <p>Discover the exceptional facilities that make Light Peace Academy a place where students thrive</p>
+        </div>
+
+        <div class="facilities-grid">
+          <!-- Academic Facilities -->
+          <div class="facility-card">
+            <div class="facility-image">
+              <img loading="lazy" src="images/IMG-20250904-WA0017.jpg" alt="Modern Classroom" onerror="this.src='images/IMG_20250928_212658_606.jpg'">
+              <div class="facility-overlay">
+                <h3>Smart Classrooms</h3>
+              </div>
+            </div>
+            <div class="facility-content">
+              <h3>Modern Classrooms</h3>
+              <p>25+ technologically equipped classrooms with interactive whiteboards, ergonomic seating, and optimal lighting for enhanced learning experiences.</p>
+              <ul class="facility-features">
+                <li>Interactive whiteboards</li>
+                <li>High-speed WiFi</li>
+                <li>Ergonomic furniture</li>
+                <li>Climate control</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="facility-card">
+            <div class="facility-image">
+              <img loading="lazy" src="images/WhatsApp Image 2025-09-04 at 19.37.26_ef5cf3a4.jpg" alt="Science Laboratory" onerror="this.src='images/IMG_20250928_212658_606.jpg'">
+              <div class="facility-overlay">
+                <h3>Science Labs</h3>
+              </div>
+            </div>
+            <div class="facility-content">
+              <h3>Science Laboratories</h3>
+              <p>Eight fully equipped science labs for Physics, Chemistry, and Biology, featuring modern apparatus and safety equipment for hands-on experiments.</p>
+              <ul class="facility-features">
+                <li>Modern lab equipment</li>
+                <li>Safety protocols</li>
+                <li>Research facilities</li>
+                <li>Digital microscopy</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="facility-card">
+            <div class="facility-image">
+              <img loading="lazy" src="images/WhatsApp Image 2025-09-04 at 19.40.07_795bdbd8.jpg" alt="Computer Laboratory" onerror="this.src='images/IMG_20250928_212658_606.jpg'">
+              <div class="facility-overlay">
+                <h3>Computer Labs</h3>
+              </div>
+            </div>
+            <div class="facility-content">
+              <h3>Computer Laboratories</h3>
+              <p>Three computer labs with 120+ high-performance computers, running the latest software and providing access to online learning resources.</p>
+              <ul class="facility-features">
+                <li>Latest hardware</li>
+                <li>Programming software</li>
+                <li>3D design tools</li>
+                <li>Online resources</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Sports Facilities -->
+          <div class="facility-card">
+            <div class="facility-image">
+              <img loading="lazy" src="images/WhatsApp Image 2025-09-04 at 19.47.24_f7315c0a.jpg" alt="Sports Complex" onerror="this.src='images/IMG_20250928_212658_606.jpg'">
+              <div class="facility-overlay">
+                <h3>Sports Complex</h3>
+              </div>
+            </div>
+            <div class="facility-content">
+              <h3>Sports Complex</h3>
+              <p>Comprehensive sports facilities including a gymnasium, basketball courts, and fitness center promoting physical health and teamwork.</p>
+              <ul class="facility-features">
+                <li>Full-size gymnasium</li>
+                <li>Basketball courts</li>
+                <li>Fitness equipment</li>
+                <li>Professional coaching</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="facility-card">
+            <div class="facility-image">
+              <img loading="lazy" src="images/WhatsApp Image 2025-09-04 at 19.58.54_a3cf44e0.jpg" alt="Playground" onerror="this.src='images/IMG_20250928_212658_606.jpg'">
+              <div class="facility-overlay">
+                <h3>Playground</h3>
+              </div>
+            </div>
+            <div class="facility-content">
+              <h3>Outdoor Facilities</h3>
+              <p>Extensive outdoor playgrounds and sports fields providing space for physical activities, games, and recreational sports throughout the year.</p>
+              <ul class="facility-features">
+                <li>Sports fields</li>
+                <li>Playground equipment</li>
+                <li>Running tracks</li>
+                <li>Open spaces</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Support Facilities -->
+          <div class="facility-card">
+            <div class="facility-image">
+              <img loading="lazy" src="images/Screenshot_20250416-191656.png" alt="Library" onerror="this.src='images/IMG_20250928_212658_606.jpg'">
+              <div class="facility-overlay">
+                <h3>Library</h3>
+              </div>
+            </div>
+            <div class="facility-content">
+              <h3>Modern Library</h3>
+              <p>A comprehensive library with 15,000+ books, digital resources, study areas, and research facilities supporting academic excellence.</p>
+              <ul class="facility-features">
+                <li>15,000+ books</li>
+                <li>Digital resources</li>
+                <li>Study pods</li>
+                <li>Research databases</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="facility-card">
+            <div class="facility-image">
+              <img loading="lazy" src="images/IMG-20250904-WA0018.jpg" alt="Cafeteria" onerror="this.src='images/IMG_20250928_212658_606.jpg'">
+              <div class="facility-overlay">
+                <h3>Cafeteria</h3>
+              </div>
+            </div>
+            <div class="facility-content">
+              <h3>Cafeteria</h3>
+              <p>Modern cafeteria serving nutritious meals in a welcoming environment, with separate dining areas and outdoor seating options.</p>
+              <ul class="facility-features">
+                <li>Nutritious meals</li>
+                <li>Various cuisines</li>
+                <li>Dining areas</li>
+                <li>Outdoor seating</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="facility-card">
+            <div class="facility-image">
+              <img loading="lazy" src="images/principal.jpg" alt="Auditorium" onerror="this.src='images/IMG_20250928_212658_606.jpg'">
+              <div class="facility-overlay">
+                <h3>Auditorium</h3>
+              </div>
+            </div>
+            <div class="facility-content">
+              <h3>Auditorium</h3>
+              <p>A 500-seat auditorium equipped with state-of-the-art audio-visual systems, perfect for assemblies, performances, and community events.</p>
+              <ul class="facility-features">
+                <li>500-seat capacity</li>
+                <li>AV equipment</li>
+                <li>Stage facilities</li>
+                <li>Sound system</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facilities Stats -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">🏫</div>
+            <div class="stat-number" data-target="25">0</div>
+            <div class="stat-label">Classrooms</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🔬</div>
+            <div class="stat-number" data-target="8">0</div>
+            <div class="stat-label">Science Labs</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">💻</div>
+            <div class="stat-number" data-target="120">0</div>
+            <div class="stat-label">Computers</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">📚</div>
+            <div class="stat-number" data-target="15000">0</div>
+            <div class="stat-label">Library Books</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🏃</div>
+            <div class="stat-number" data-target="5">0</div>
+            <div class="stat-label">Sports Facilities</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🎭</div>
+            <div class="stat-number" data-target="500">0</div>
+            <div class="stat-label">Auditorium Seats</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Experience Light Peace Academy Facilities</h2>
+          <p>Schedule a campus tour to see our world-class facilities in person and discover why Light Peace Academy is the perfect place for your child's education.</p>
+          <a href="contact.html" class="cta-button">Schedule a Tour</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Light Peace Academy</h3>
+          <p>Excellence in Education, Building Tomorrow's Leaders</p>
+          <div class="social-links">
+            <a href="#" class="social-link">📘 Facebook</a>
+            <a href="#" class="social-link">🐦 Twitter</a>
+            <a href="#" class="social-link">📷 Instagram</a>
+            <a href="#" class="social-link">💼 LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="staff.html">Our Staff</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Academic</h3>
+          <ul class="footer-links">
+            <li><a href="timetable.html">Timetable</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <div class="contact-info">
+            <p>📍 123 Education Street<br>Knowledge City, KC 12345</p>
+            <p>📞 +1 (555) 123-4567</p>
+            <p>✉️ info@lightpeaceacademy.edu</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Light Peace Academy. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Access homework assignments and study materials at Light Peace Academy - structured learning support for academic success.">
+  <meta name="keywords" content="Light Peace Academy homework, assignments, study materials, academic support">
+  <meta name="author" content="Light Peace Academy">
+  <meta property="og:title" content="Homework & Assignments - Light Peace Academy">
+  <meta property="og:description" content="Access structured homework assignments and study materials designed to reinforce classroom learning.">
+  <meta property="og:image" content="images/homework.jpg">
+  <meta property="og:type" content="website">
+  <title>Homework & Assignments - Light Peace Academy</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div id="loading-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #058fca, #0277bd); z-index: 9999; display: flex; justify-content: center; align-items: center; transition: opacity 0.5s ease;">
+    <div style="text-align: center; color: white;">
+      <div style="width: 60px; height: 60px; border: 4px solid rgba(255,255,255,0.3); border-top: 4px solid #FFD700; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 20px;"></div>
+      <h3 style="font-size: 1.5rem; margin: 0;">Loading Assignments</h3>
+      <p style="opacity: 0.8; margin: 10px 0 0;">Preparing your study materials...</p>
+    </div>
+  </div>
+
+  <header style="background: linear-gradient(135deg, #0277bd, #058fca); color: white; padding: 15px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <div style="display: flex; align-items: center;">
+        <div style="width: 50px; height: 50px; background: #FFD700; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; font-weight: bold; font-size: 1.2rem; color: #0277bd;">A</div>
+        <h1 style="margin: 0; font-size: 1.8rem; font-weight: 700;">Light Peace Academy</h1>
+      </div>
+      <nav>
+        <ul style="display: flex; list-style: none; margin: 0; padding: 0; gap: 30px;">
+          <li><a href="index.html" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">Home</a></li>
+          <li class="dropdown" style="position: relative;">
+            <a href="#" onclick="return false;" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; cursor: pointer;">About</a>
+            <ul class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: white; min-width: 200px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; margin-top: 10px;">
+              <li><a href="history.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">History</a></li>
+              <li><a href="mission.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Mission</a></li>
+              <li><a href="vision.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Vision</a></li>
+              <li><a href="values.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Core Values</a></li>
+              <li><a href="facilities.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Facilities</a></li>
+              <li><a href="achievements.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; transition: all 0.3s ease;">Achievements</a></li>
+            </ul>
+          </li>
+          <li class="dropdown" style="position: relative;">
+            <a href="#" onclick="return false;" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; cursor: pointer; background: rgba(255,215,0,0.2); border: 2px solid #FFD700;">Academic</a>
+            <ul class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: white; min-width: 200px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; margin-top: 10px;">
+              <li><a href="staff.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Staff</a></li>
+              <li><a href="timetable.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Timetable</a></li>
+              <li><a href="homeworks.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease; background: rgba(255,215,0,0.1);">Homeworks</a></li>
+              <li><a href="results.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Results</a></li>
+              <li><a href="resources.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; transition: all 0.3s ease;">Resources</a></li>
+            </ul>
+          </li>
+          <li class="dropdown" style="position: relative;">
+            <a href="#" onclick="return false;" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; cursor: pointer;">School Life</a>
+            <ul class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: white; min-width: 200px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; margin-top: 10px;">
+              <li><a href="events.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Events</a></li>
+              <li><a href="gallery.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; transition: all 0.3s ease;">Gallery</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease;">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Homework Hero Section -->
+    <section class="academic-hero">
+      <div class="academic-hero-content">
+        <h2>Homework & Assignments</h2>
+        <p>Structured homework assignments designed to reinforce classroom learning, develop independent study skills, and prepare students for academic success. Our comprehensive approach ensures balanced learning both in and out of the classroom.</p>
+
+        <div class="academic-stats-grid">
+          <div class="academic-stat-item">
+            <div class="academic-stat-number counter" data-target="95">0</div>
+            <div class="academic-stat-label">Completion Rate</div>
+          </div>
+          <div class="academic-stat-item">
+            <div class="academic-stat-number counter" data-target="85">0</div>
+            <div class="academic-stat-label">Student Satisfaction</div>
+          </div>
+          <div class="academic-stat-item">
+            <div class="academic-stat-number counter" data-target="50">0</div>
+            <div class="academic-stat-label">Assignments Weekly</div>
+          </div>
+          <div class="academic-stat-item">
+            <div class="academic-stat-number counter" data-target="24">0</div>
+            <div class="academic-stat-label">Hour Support Available</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Homework Types -->
+    <section class="homeworks-section">
+      <div class="container">
+        <h2>Types of Assignments</h2>
+        <p>Our homework program includes various types of assignments designed to meet different learning objectives and develop diverse skills.</p>
+
+        <div class="homework-types">
+          <div class="homework-card">
+            <div class="homework-header">
+              <div class="homework-icon">📝</div>
+              <div>
+                <h3>Daily Assignments</h3>
+                <p>Reinforce daily lessons</p>
+              </div>
+            </div>
+            <p>Short, focused assignments given daily to reinforce classroom learning and ensure understanding of key concepts. These assignments are designed to be completed within 30-45 minutes.</p>
+          </div>
+
+          <div class="homework-card">
+            <div class="homework-header">
+              <div class="homework-icon">🔬</div>
+              <div>
+                <h3>Project Work</h3>
+                <p>Extended learning projects</p>
+              </div>
+            </div>
+            <p>Long-term projects that encourage research, creativity, and independent learning across multiple subjects. Projects are designed to develop critical thinking and problem-solving skills.</p>
+          </div>
+
+          <div class="homework-card">
+            <div class="homework-header">
+              <div class="homework-icon">📚</div>
+              <div>
+                <h3>Reading Assignments</h3>
+                <p>Literature & research</p>
+              </div>
+            </div>
+            <p>Curated reading lists and research assignments that broaden knowledge and develop critical thinking skills. Includes both fiction and non-fiction materials.</p>
+          </div>
+
+          <div class="homework-card">
+            <div class="homework-header">
+              <div class="homework-icon">🧮</div>
+              <div>
+                <h3>Practice Exercises</h3>
+                <p>Skill development</p>
+              </div>
+            </div>
+            <p>Targeted practice exercises for mathematics, languages, and sciences to build proficiency and confidence in core subject areas.</p>
+          </div>
+
+          <div class="homework-card">
+            <div class="homework-header">
+              <div class="homework-icon">🎨</div>
+              <div>
+                <h3>Creative Assignments</h3>
+                <p>Arts & expression</p>
+              </div>
+            </div>
+            <p>Creative projects in visual arts, music, drama, and writing that encourage self-expression and artistic development.</p>
+          </div>
+
+          <div class="homework-card">
+            <div class="homework-header">
+              <div class="homework-icon">💻</div>
+              <div>
+                <h3>Digital Learning</h3>
+                <p>Technology integration</p>
+              </div>
+            </div>
+            <p>Assignments that incorporate digital tools, online research, and educational software to prepare students for the digital age.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Homework Support -->
+    <section class="academic-overview">
+      <div class="container">
+        <h2>Homework Support & Resources</h2>
+        <p>We provide comprehensive support to ensure all students can successfully complete their assignments and maximize their learning.</p>
+
+        <div class="academic-grid">
+          <div class="academic-card">
+            <div class="academic-card-icon">👨‍🏫</div>
+            <h3>Study Hall Support</h3>
+            <p>Dedicated study hall periods with teacher supervision and individual assistance for students who need extra help.</p>
+          </div>
+
+          <div class="academic-card">
+            <div class="academic-card-icon">📖</div>
+            <h3>Resource Library</h3>
+            <p>Access to textbooks, reference materials, and online resources to support homework completion.</p>
+          </div>
+
+          <div class="academic-card">
+            <div class="academic-card-icon">💬</div>
+            <h3>Parent Communication</h3>
+            <p>Regular updates to parents about homework assignments, progress, and any support needs.</p>
+          </div>
+
+          <div class="academic-card">
+            <div class="academic-card-icon">🎯</div>
+            <h3>Progress Tracking</h3>
+            <p>Individual progress tracking to identify strengths and areas needing additional support.</p>
+          </div>
+
+          <div class="academic-card">
+            <div class="academic-card-icon">⏰</div>
+            <h3>Time Management</h3>
+            <p>Skills development in time management and study planning to ensure homework completion.</p>
+          </div>
+
+          <div class="academic-card">
+            <div class="academic-card-icon">🏆</div>
+            <h3>Achievement Recognition</h3>
+            <p>Recognition and rewards for consistent homework completion and quality work.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Weekly Homework Schedule -->
+    <section class="academic-stats-section">
+      <div class="container">
+        <h2>Weekly Homework Schedule</h2>
+        <p>Structured homework allocation ensures balanced learning across all subjects throughout the week.</p>
+
+        <div class="academic-stats-cards">
+          <div class="academic-stat-card">
+            <div class="counter" data-target="6</div>
+            <h3>Subjects Daily</h3>
+            <p>Average assignments per day</p>
+          </div>
+
+          <div class="academic-stat-card">
+            <div class="counter" data-target="45</div>
+            <h3>Minutes per Subject</h3>
+            <p>Recommended time allocation</p>
+          </div>
+
+          <div class="academic-stat-card">
+            <div class="counter" data-target">2.5</div>
+            <h3>Hours Total</h3>
+            <p>Daily homework time</p>
+          </div>
+
+          <div class="academic-stat-card">
+            <div class="counter" data-target">1</div>
+            <h3>Project Weekly</h3>
+            <p>Extended assignments</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="academic-cta">
+      <div class="academic-cta-content">
+        <h2>Support Your Learning Journey</h2>
+        <p>Access comprehensive homework support and resources designed to help you excel academically. Our structured approach ensures consistent progress and skill development.</p>
+
+        <div class="academic-cta-buttons">
+          <a href="resources.html" class="academic-btn-primary">
+            <span>📚</span>
+            Access Resources
+          </a>
+          <a href="contact.html" class="academic-btn-secondary">
+            Get Homework Help
+          </a>
+        </div>
+
+        <div class="academic-features">
+          <div class="academic-feature">
+            <div class="academic-feature-icon">📝</div>
+            <div class="academic-feature-text">Structured Assignments</div>
+          </div>
+          <div class="academic-feature">
+            <div class="academic-feature-icon">👨‍🏫</div>
+            <div class="academic-feature-text">Expert Support</div>
+          </div>
+          <div class="academic-feature">
+            <div class="academic-feature-icon">📈</div>
+            <div class="academic-feature-text">Progress Tracking</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Light Peace Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+    <section class="page-hero">
+      <h2>Homeworks</h2>
+      <p>Access assignments, projects, and homework guidelines for all grades.</p>
+    </section>
+
+    <section class="content">
+      <div class="container">
+        <p>Our homework assignments are designed to reinforce classroom learning and develop critical thinking skills. Students can find weekly assignments, project guidelines, and submission deadlines here.</p>
+        <p>For any questions regarding homework, please contact your subject teacher or the academic office.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Light Peace Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

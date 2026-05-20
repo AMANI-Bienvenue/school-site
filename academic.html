@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic Excellence at Light Peace Academy - Meet our expert faculty, view timetables, access resources, and explore academic achievements.">
+  <meta name="keywords" content="Light Peace Academy academics, faculty, teachers, timetable, curriculum, results, resources, education">
+  <meta name="author" content="Light Peace Academy">
+  <meta property="og:title" content="Academic Excellence - Light Peace Academy">
+  <meta property="og:description" content="Discover academic excellence at Light Peace Academy with our expert faculty, comprehensive curriculum, and outstanding results.">
+  <meta property="og:image" content="images/IMG_20250928_212658_606.jpg">
+  <meta property="og:type" content="website">
+  <title>Academic Excellence - Light Peace Academy</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div id="loading-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #058fca, #0277bd); z-index: 9999; display: flex; justify-content: center; align-items: center; transition: opacity 0.5s ease;">
+    <div style="text-align: center; color: white;">
+      <div style="width: 60px; height: 60px; border: 4px solid rgba(255,255,255,0.3); border-top: 4px solid #FFD700; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 20px;"></div>
+      <h3 style="font-size: 1.5rem; margin: 0;">Welcome to Academic Excellence</h3>
+      <p style="opacity: 0.8; margin: 10px 0 0;">Loading academic features...</p>
+    </div>
+  </div>
+
+  <header style="background: linear-gradient(135deg, #0277bd, #058fca); color: white; padding: 15px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <div style="display: flex; align-items: center;">
+        <div style="width: 50px; height: 50px; background: #FFD700; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; font-weight: bold; font-size: 1.2rem; color: #0277bd;">A</div>
+        <h1 style="margin: 0; font-size: 1.8rem; font-weight: 700;">Light Peace Academy</h1>
+      </div>
+      <nav>
+        <ul style="display: flex; list-style: none; margin: 0; padding: 0; gap: 30px;">
+          <li><a href="index.html" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">Home</a></li>
+          <li class="dropdown" style="position: relative;">
+            <a href="#" onclick="return false;" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; cursor: pointer;">About</a>
+            <ul class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: white; min-width: 200px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; margin-top: 10px;">
+              <li><a href="history.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">History</a></li>
+              <li><a href="mission.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Mission</a></li>
+              <li><a href="vision.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Vision</a></li>
+              <li><a href="values.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Core Values</a></li>
+              <li><a href="facilities.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Facilities</a></li>
+              <li><a href="achievements.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; transition: all 0.3s ease;">Achievements</a></li>
+            </ul>
+          </li>
+          <li class="dropdown" style="position: relative;">
+            <a href="#" onclick="return false;" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; cursor: pointer; background: rgba(255,215,0,0.2); border: 2px solid #FFD700;">Academic</a>
+            <ul class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: white; min-width: 200px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; margin-top: 10px;">
+              <li><a href="staff.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Staff</a></li>
+              <li><a href="timetable.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Timetable</a></li>
+              <li><a href="homeworks.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Homeworks</a></li>
+              <li><a href="results.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Results</a></li>
+              <li><a href="resources.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; transition: all 0.3s ease;">Resources</a></li>
+            </ul>
+          </li>
+          <li class="dropdown" style="position: relative;">
+            <a href="#" onclick="return false;" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; cursor: pointer;">School Life</a>
+            <ul class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: white; min-width: 200px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; margin-top: 10px;">
+              <li><a href="events.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Events</a></li>
+              <li><a href="gallery.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; transition: all 0.3s ease;">Gallery</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease;">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Academic Hero Section -->
+    <section class="academic-hero">
+      <div class="academic-hero-content">
+        <h2>Academic Excellence at Light Peace Academy</h2>
+        <p>Discover our comprehensive academic programs, meet our expert faculty, and explore the resources that drive student success. Our commitment to educational excellence sets the foundation for lifelong learning and achievement.</p>
+
+        <div class="academic-stats-grid">
+          <div class="academic-stat-item">
+            <div class="academic-stat-number counter" data-target="50">0</div>
+            <div class="academic-stat-label">Expert Teachers</div>
+          </div>
+          <div class="academic-stat-item">
+            <div class="academic-stat-number counter" data-target="95">0</div>
+            <div class="academic-stat-label">Pass Rate</div>
+          </div>
+          <div class="academic-stat-item">
+            <div class="academic-stat-number counter" data-target="15">0</div>
+            <div class="academic-stat-label">Subjects Offered</div>
+          </div>
+          <div class="academic-stat-item">
+            <div class="academic-stat-number counter" data-target="500">0</div>
+            <div class="academic-stat-label">Students Excelled</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </section>
+
+    <!-- Academic Overview -->
+    <section class="academic-overview">
+      <div class="container">
+        <h2>Our Academic Foundation</h2>
+        <p>At Light Peace Academy, we believe that academic excellence is built on a strong foundation of quality education, expert faculty, and outstanding results. Our comprehensive approach ensures every student reaches their full potential.</p>
+
+        <div class="academic-grid">
+          <div class="academic-card">
+            <div class="academic-card-icon">🎓</div>
+            <h3>Quality Education</h3>
+            <p>Comprehensive curriculum designed to meet international standards while incorporating local context and cultural values.</p>
+          </div>
+
+          <div class="academic-card">
+            <div class="academic-card-icon">👨‍🏫</div>
+            <h3>Expert Faculty</h3>
+            <p>Highly qualified and experienced teachers dedicated to nurturing young minds and fostering academic growth.</p>
+          </div>
+
+          <div class="academic-card">
+            <div class="academic-card-icon">🏆</div>
+            <h3>Outstanding Results</h3>
+            <p>Consistent academic achievements with students excelling in national examinations and university admissions.</p>
+          </div>
+    </section>
+
+    <!-- Academic Staff -->
+    <section class="academic-staff">
+      <div class="container">
+        <h2>Meet Our Expert Faculty</h2>
+        <p>Our dedicated team of educators brings years of experience and passion for teaching. Each member of our faculty is committed to providing exceptional education and mentorship to our students.</p>
+
+        <div class="staff-grid">
+          <div class="staff-card">
+            <div class="staff-header">
+              <div class="staff-header-icon">👩‍🏫</div>
+              <h3>Dr. Sarah Johnson</h3>
+              <p>Principal & Mathematics</p>
+            </div>
+            <div class="staff-content">
+              <p>PhD in Mathematics with 15 years of teaching experience. Specializes in advanced calculus and mathematical modeling.</p>
+              <div class="staff-meta">
+                <span>📧 sarah.j@lightpeaceacademy.edu</span>
+                <span>⭐ 4.9/5</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="staff-card">
+            <div class="staff-header">
+              <div class="staff-header-icon">👨‍🏫</div>
+              <h3>Prof. Michael Chen</h3>
+              <p>Science Department Head</p>
+            </div>
+            <div class="staff-content">
+              <p>Former university professor with expertise in physics and chemistry. Leads our STEM innovation program.</p>
+              <div class="staff-meta">
+                <span>📧 michael.c@lightpeaceacademy.edu</span>
+                <span>⭐ 4.8/5</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="staff-card">
+            <div class="staff-header">
+              <div class="staff-header-icon">👩‍🎨</div>
+              <h3>Ms. Emma Rodriguez</h3>
+              <p>Arts & Literature Teacher</p>
+            </div>
+            <div class="staff-content">
+              <p>Creative writing specialist with a passion for literature and visual arts. Organizes annual literary festivals and art exhibitions.</p>
+              <div class="staff-meta">
+                <span>📧 emma.r@lightpeaceacademy.edu</span>
+                <span>⭐ 4.9/5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic Statistics -->
+    <section class="academic-stats-section">
+      <div class="container">
+        <h2>Academic Achievements</h2>
+        <p>Our commitment to academic excellence is reflected in outstanding results and continuous improvement.</p>
+
+        <div class="academic-stats-cards">
+          <div class="academic-stat-card">
+            <div class="counter" data-target="98">0</div>
+            <h3>National Exam Pass Rate</h3>
+            <p>Above national average</p>
+          </div>
+
+          <div class="academic-stat-card">
+            <div class="counter" data-target="85">0</div>
+            <h3>University Acceptance Rate</h3>
+            <p>Top universities worldwide</p>
+          </div>
+
+          <div class="academic-stat-card">
+            <div class="counter" data-target="25">0</div>
+            <h3>Average Class Size</h3>
+            <p>Personalized attention</p>
+          </div>
+
+          <div class="academic-stat-card">
+            <div class="counter" data-target="50">0</div>
+            <h3>Qualified Teachers</h3>
+            <p>Expert educators</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timetable Section -->
+    <section class="timetable-section">
+      <div class="container">
+        <h2>Academic Timetable</h2>
+        <p>Our structured timetable ensures balanced learning with dedicated time for each subject and extracurricular activities.</p>
+
+        <div class="timetable-showcase">
+          <div class="timetable-sessions">
+            <div class="session-card">
+              <div class="session-card-icon">🌅</div>
+              <h4>Morning Session</h4>
+              <p>7:30 AM - 1:00 PM</p>
+              <small>Core academic subjects</small>
+            </div>
+
+            <div class="session-card">
+              <div class="session-card-icon">🌞</div>
+              <h4>Afternoon Session</h4>
+              <p>2:00 PM - 5:30 PM</p>
+              <small>Electives & activities</small>
+            </div>
+
+            <div class="session-card">
+              <div class="session-card-icon">📚</div>
+              <h4>Study Hours</h4>
+              <p>5:30 PM - 7:00 PM</p>
+              <small>Homework & revision</small>
+            </div>
+          </div>
+
+          <div style="text-align: center;">
+            <a href="timetable.html" class="btn-primary">View Detailed Timetable</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Homeworks Section -->
+    <section class="homeworks-section">
+      <div class="container">
+        <h2>Homework & Assignments</h2>
+        <p>Structured homework assignments reinforce classroom learning and develop independent study skills.</p>
+
+        <div class="homework-types">
+          <div class="homework-card">
+            <div class="homework-header">
+              <div class="homework-icon">📝</div>
+              <div>
+                <h3>Daily Assignments</h3>
+                <p>Reinforce daily lessons</p>
+              </div>
+            </div>
+            <p>Short, focused assignments given daily to reinforce classroom learning and ensure understanding of key concepts.</p>
+          </div>
+
+          <div class="homework-card">
+            <div class="homework-header">
+              <div class="homework-icon">🔬</div>
+              <div>
+                <h3>Project Work</h3>
+                <p>Extended learning projects</p>
+              </div>
+            </div>
+            <p>Long-term projects that encourage research, creativity, and independent learning across multiple subjects.</p>
+          </div>
+
+          <div class="homework-card">
+            <div class="homework-header">
+              <div class="homework-icon">📚</div>
+              <div>
+                <h3>Reading Assignments</h3>
+                <p>Literature & research</p>
+              </div>
+            </div>
+            <p>Curated reading lists and research assignments that broaden knowledge and develop critical thinking skills.</p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+          <a href="homeworks.html" class="btn-primary">View All Assignments</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section">
+      <div class="container">
+        <h2>Academic Results & Achievements</h2>
+        <p>Our students consistently achieve outstanding results, demonstrating the effectiveness of our educational approach.</p>
+
+        <div class="results-highlights">
+          <div class="result-highlight">
+            <div class="result-icon">🏆</div>
+            <h3>National Rankings</h3>
+            <p>Consistently ranked among top 5 schools in national examinations with outstanding pass rates.</p>
+            <div class="result-stat">#3</div>
+            <small>National Ranking 2025</small>
+          </div>
+
+          <div class="result-highlight">
+            <div class="result-icon">🎓</div>
+            <h3>University Acceptances</h3>
+            <p>Students accepted to prestigious universities worldwide, including Ivy League and top international institutions.</p>
+            <div class="result-stat">85%</div>
+            <small>Acceptance Rate</small>
+          </div>
+
+          <div class="result-highlight">
+            <div class="result-icon">📈</div>
+            <h3>Grade Improvements</h3>
+            <p>Significant improvement in student grades across all subjects with personalized learning approaches.</p>
+            <div class="result-stat">+25%</div>
+            <small>Average Improvement</small>
+          </div>
+        </div>
+
+        <div style="text-align: center;">
+          <a href="results.html" class="btn-primary" style="background: linear-gradient(135deg, #FFD700, #FFA500); color: #0277bd;">View Detailed Results</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="resources-section" style="padding: 80px 0; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 60px;">
+          <h2 style="color: #0277bd; font-size: 2.8rem; font-weight: 700; margin-bottom: 20px;">Educational Resources</h2>
+          <p style="font-size: 1.2rem; color: #495057; max-width: 700px; margin: 0 auto; line-height: 1.6;">Access comprehensive learning materials, study guides, and digital resources to support academic success.</p>
+        </div>
+
+        <div class="resources-grid">
+          <div class="resource-card">
+            <div class="resource-icon">📖</div>
+            <h3>Digital Library</h3>
+            <p>Access thousands of e-books, research papers, and educational materials online.</p>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">🎥</div>
+            <h3>Video Tutorials</h3>
+            <p>Interactive video lessons and demonstrations for complex topics and practical skills.</p>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">🧮</div>
+            <h3>Practice Tools</h3>
+            <p>Interactive quizzes, practice tests, and learning games to reinforce understanding.</p>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">📚</div>
+            <h3>Study Guides</h3>
+            <p>Comprehensive study materials, revision notes, and exam preparation guides.</p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+          <a href="resources.html" class="btn-primary">Access All Resources</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="academic-cta">
+      <div class="academic-cta-content">
+        <h2>Join Our Academic Community</h2>
+        <p>Experience excellence in education with our expert faculty, comprehensive curriculum, and outstanding academic support.</p>
+
+        <div class="academic-cta-buttons">
+          <a href="contact.html" class="academic-btn-primary">
+            <span>📞</span>
+            Enroll Now
+          </a>
+          <a href="#staff" class="academic-btn-secondary">
+            Meet Our Faculty
+          </a>
+        </div>
+
+        <div class="academic-features">
+          <div class="academic-feature">
+            <div class="academic-feature-icon">🎓</div>
+            <div class="academic-feature-text">Quality Education</div>
+          </div>
+          <div class="academic-feature">
+            <div class="academic-feature-icon">👨‍🏫</div>
+            <div class="academic-feature-text">Expert Teachers</div>
+          </div>
+          <div class="academic-feature">
+            <div class="academic-feature-icon">🏆</div>
+            <div class="academic-feature-text">Academic Success</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Light Peace Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

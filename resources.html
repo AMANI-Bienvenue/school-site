@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Access comprehensive educational resources at Light Peace Academy - digital library, study guides, video tutorials, and learning tools.">
+  <meta name="keywords" content="Light Peace Academy resources, digital library, study guides, educational materials, learning tools">
+  <meta name="author" content="Light Peace Academy">
+  <meta property="og:title" content="Educational Resources - Light Peace Academy">
+  <meta property="og:description" content="Access comprehensive learning materials, study guides, and digital resources to support academic success.">
+  <meta property="og:image" content="images/resources.jpg">
+  <meta property="og:type" content="website">
+  <title>Educational Resources - Light Peace Academy</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div id="loading-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #058fca, #0277bd); z-index: 9999; display: flex; justify-content: center; align-items: center; transition: opacity 0.5s ease;">
+    <div style="text-align: center; color: white;">
+      <div style="width: 60px; height: 60px; border: 4px solid rgba(255,255,255,0.3); border-top: 4px solid #FFD700; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 20px;"></div>
+      <h3 style="font-size: 1.5rem; margin: 0;">Loading Resources</h3>
+      <p style="opacity: 0.8; margin: 10px 0 0;">Preparing educational materials...</p>
+    </div>
+  </div>
+
+  <header style="background: linear-gradient(135deg, #0277bd, #058fca); color: white; padding: 15px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <div style="display: flex; align-items: center;">
+        <div style="width: 50px; height: 50px; background: #FFD700; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; font-weight: bold; font-size: 1.2rem; color: #0277bd;">A</div>
+        <h1 style="margin: 0; font-size: 1.8rem; font-weight: 700;">Light Peace Academy</h1>
+      </div>
+      <nav>
+        <ul style="display: flex; list-style: none; margin: 0; padding: 0; gap: 30px;">
+          <li><a href="index.html" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">Home</a></li>
+          <li class="dropdown" style="position: relative;">
+            <a href="#" onclick="return false;" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; cursor: pointer;">About</a>
+            <ul class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: white; min-width: 200px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; margin-top: 10px;">
+              <li><a href="history.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">History</a></li>
+              <li><a href="mission.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Mission</a></li>
+              <li><a href="vision.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Vision</a></li>
+              <li><a href="values.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Core Values</a></li>
+              <li><a href="facilities.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Facilities</a></li>
+              <li><a href="achievements.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; transition: all 0.3s ease;">Achievements</a></li>
+            </ul>
+          </li>
+          <li class="dropdown" style="position: relative;">
+            <a href="#" onclick="return false;" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; cursor: pointer; background: rgba(255,215,0,0.2); border: 2px solid #FFD700;">Academic</a>
+            <ul class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: white; min-width: 200px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; margin-top: 10px;">
+              <li><a href="staff.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Staff</a></li>
+              <li><a href="timetable.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Timetable</a></li>
+              <li><a href="homeworks.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Homeworks</a></li>
+              <li><a href="results.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Results</a></li>
+              <li><a href="resources.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; transition: all 0.3s ease; background: rgba(255,215,0,0.1);">Resources</a></li>
+            </ul>
+          </li>
+          <li class="dropdown" style="position: relative;">
+            <a href="#" onclick="return false;" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; cursor: pointer;">School Life</a>
+            <ul class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: white; min-width: 200px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; margin-top: 10px;">
+              <li><a href="events.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Events</a></li>
+              <li><a href="gallery.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; transition: all 0.3s ease;">Gallery</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease;">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Resources Hero Section -->
+    <section class="academic-hero">
+      <div class="academic-hero-content">
+        <h2>Educational Resources</h2>
+        <p>Access comprehensive learning materials, study guides, and digital resources designed to support academic success. Our extensive collection ensures every student has the tools they need to excel.</p>
+
+        <div class="academic-stats-grid">
+          <div class="academic-stat-item">
+            <div class="academic-stat-number counter" data-target="5000">0</div>
+            <div class="academic-stat-label">Digital Books</div>
+          </div>
+          <div class="academic-stat-item">
+            <div class="academic-stat-number counter" data-target="200">0</div>
+            <div class="academic-stat-label">Video Tutorials</div>
+          </div>
+          <div class="academic-stat-item">
+            <div class="academic-stat-number counter" data-target="15">0</div>
+            <div class="academic-stat-label">Online Courses</div>
+          </div>
+          <div class="academic-stat-item">
+            <div class="academic-stat-number counter" data-target="24">0</div>
+            <div class="academic-stat-label">Hour Access</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resource Categories -->
+    <section class="resources-section">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 60px;">
+          <h2 style="color: #0277bd; font-size: 2.8rem; font-weight: 700; margin-bottom: 20px;">Resource Categories</h2>
+          <p style="font-size: 1.2rem; color: #495057; max-width: 700px; margin: 0 auto; line-height: 1.6;">Comprehensive collection of educational materials organized by category for easy access and efficient learning.</p>
+        </div>
+
+        <div class="resources-grid">
+          <div class="resource-card">
+            <div class="resource-icon">📖</div>
+            <h3>Digital Library</h3>
+            <p>Access thousands of e-books, research papers, and educational materials online. Includes textbooks, reference materials, and academic journals.</p>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">🎥</div>
+            <h3>Video Tutorials</h3>
+            <p>Interactive video lessons and demonstrations for complex topics and practical skills. Expert teachers explain concepts with visual aids.</p>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">🧮</div>
+            <h3>Practice Tools</h3>
+            <p>Interactive quizzes, practice tests, and learning games to reinforce understanding. Track progress and identify areas for improvement.</p>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">📚</div>
+            <h3>Study Guides</h3>
+            <p>Comprehensive study materials, revision notes, and exam preparation guides. Curated content for effective exam preparation.</p>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">🔬</div>
+            <h3>Lab Resources</h3>
+            <p>Virtual laboratory simulations and experiments for science subjects. Safe, interactive learning experiences.</p>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">🎵</div>
+            <h3>Multimedia Content</h3>
+            <p>Audio lessons, podcasts, and interactive presentations. Alternative learning methods for different learning styles.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subject-Specific Resources -->
+    <section class="academic-overview">
+      <div class="container">
+        <h2>Subject-Specific Resources</h2>
+        <p>Dedicated resources for each academic discipline to support comprehensive learning and skill development.</p>
+
+        <div class="academic-grid">
+          <div class="academic-card">
+            <div class="academic-card-icon">🔢</div>
+            <h3>Mathematics</h3>
+            <p>Interactive problem-solving tools, geometry software, calculus simulators, and step-by-step solution guides.</p>
+          </div>
+
+          <div class="academic-card">
+            <div class="academic-card-icon">🧪</div>
+            <h3>Science</h3>
+            <p>Virtual labs, molecular modeling software, physics simulations, and biology interactive diagrams.</p>
+          </div>
+
+          <div class="academic-card">
+            <div class="academic-card-icon">📝</div>
+            <h3>Languages</h3>
+            <p>Language learning apps, pronunciation guides, grammar exercises, and cultural immersion materials.</p>
+          </div>
+
+          <div class="academic-card">
+            <div class="academic-card-icon">🌍</div>
+            <h3>Social Sciences</h3>
+            <p>Historical timelines, geographic mapping tools, economic simulators, and political science databases.</p>
+          </div>
+
+          <div class="academic-card">
+            <div class="academic-card-icon">🎨</div>
+            <h3>Arts & Design</h3>
+            <p>Digital art software, music composition tools, design templates, and creative writing prompts.</p>
+          </div>
+
+          <div class="academic-card">
+            <div class="academic-card-icon">💻</div>
+            <h3>Technology</h3>
+            <p>Programming tutorials, coding challenges, robotics kits, and digital literacy resources.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Access & Support -->
+    <section class="academic-stats-section">
+      <div class="container">
+        <h2>Access & Support</h2>
+        <p>Multiple ways to access resources with comprehensive support to ensure effective utilization.</p>
+
+        <div class="academic-stats-cards">
+          <div class="academic-stat-card">
+            <div class="counter" data-target="24">0</div>
+            <h3>Hour Access</h3>
+            <p>Available anytime</p>
+          </div>
+
+          <div class="academic-stat-card">
+            <div class="counter" data-target">5</div>
+            <h3>Access Methods</h3>
+            <p>Web, mobile, tablet</p>
+          </div>
+
+          <div class="academic-stat-card">
+            <div class="counter" data-target">10</div>
+            <h3>Support Staff</h3>
+            <p>Technical assistance</p>
+          </div>
+
+          <div class="academic-stat-card">
+            <div class="counter" data-target">95</div>
+            <h3>User Satisfaction</h3>
+            <p>Student feedback</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Resources -->
+    <section class="homeworks-section">
+      <div class="container">
+        <h2>Additional Learning Resources</h2>
+        <p>Supplementary materials and tools to enhance the learning experience beyond traditional classroom methods.</p>
+
+        <div class="homework-types">
+          <div class="homework-card">
+            <div class="homework-header">
+              <div class="homework-icon">🌐</div>
+              <div>
+                <h3>Online Learning Platforms</h3>
+                <p>Integration with external educational platforms</p>
+              </div>
+            </div>
+            <p>Access to Khan Academy, Coursera, edX, and other reputable online learning platforms with curated course selections.</p>
+          </div>
+
+          <div class="homework-card">
+            <div class="homework-header">
+              <div class="homework-icon">👥</div>
+              <div>
+                <h3>Peer Learning Networks</h3>
+                <p>Collaborative learning communities</p>
+              </div>
+            </div>
+            <p>Student discussion forums, study groups, and peer tutoring programs to facilitate collaborative learning.</p>
+          </div>
+
+          <div class="homework-card">
+            <div class="homework-header">
+              <div class="homework-icon">📊</div>
+              <div>
+                <h3>Progress Analytics</h3>
+                <p>Learning analytics and tracking</p>
+              </div>
+            </div>
+            <p>Detailed progress reports, learning analytics, and personalized recommendations based on individual performance.</p>
+          </div>
+
+          <div class="homework-card">
+            <div class="homework-header">
+              <div class="homework-icon">🎯</div>
+              <div>
+                <h3>Career Guidance</h3>
+                <p>Future planning resources</p>
+              </div>
+            </div>
+            <p>Career exploration tools, university preparation guides, and vocational training resources.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="academic-cta">
+      <div class="academic-cta-content">
+        <h2>Unlock Your Learning Potential</h2>
+        <p>Access world-class educational resources designed to accelerate your learning and academic success.</p>
+
+        <div class="academic-cta-buttons">
+          <a href="contact.html" class="academic-btn-primary">
+            <span>📚</span>
+            Get Access
+          </a>
+          <a href="academic.html" class="academic-btn-secondary">
+            Back to Academic Overview
+          </a>
+        </div>
+
+        <div class="academic-features">
+          <div class="academic-feature">
+            <div class="academic-feature-icon">📖</div>
+            <div class="academic-feature-text">Comprehensive Library</div>
+          </div>
+          <div class="academic-feature">
+            <div class="academic-feature-icon">🎥</div>
+            <div class="academic-feature-text">Interactive Learning</div>
+          </div>
+          <div class="academic-feature">
+            <div class="academic-feature-icon">📈</div>
+            <div class="academic-feature-text">Progress Tracking</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Light Peace Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+    <section class="hero">
+      <div class="container">
+        <h2>Educational Resources for Success</h2>
+        <p>Access a wealth of materials, tools, and links to support your learning journey at Light Peace Academy.</p>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container">
+        <h3>Why Use Our Resources?</h3>
+        <p>At Light Peace Academy, we believe in empowering students with the best tools for academic excellence. Our curated resources include downloadable materials, online learning platforms, and educational apps to enhance your studies and make learning engaging and effective.</p>
+
+        <div class="resources-grid">
+          <div class="resource-category">
+            <h3>📚 Downloadable Materials</h3>
+            <p>Access study guides, notes, and worksheets created by our expert teachers.</p>
+            <ul>
+              <li><a href="files/math-grade10.pdf" download>Grade 10 Math Notes (PDF)</a> - Comprehensive algebra and geometry concepts</li>
+              <li><a href="files/science-lab-guide.pdf" download>Science Lab Guide (PDF)</a> - Safe experiment procedures and protocols</li>
+              <li><a href="files/history-timeline.docx" download>History Timeline (Word)</a> - Interactive timeline of key historical events</li>
+              <li><a href="files/english-grammar.pdf" download>English Grammar Guide (PDF)</a> - Essential grammar rules and examples</li>
+              <li><a href="files/geography-maps.pdf" download>Geography Maps (PDF)</a> - World and regional maps for study</li>
+            </ul>
+          </div>
+
+          <div class="resource-category">
+            <h3>🌐 Online Learning Platforms</h3>
+            <p>Explore free educational websites for additional learning and practice.</p>
+            <ul>
+              <li><a href="https://www.khanacademy.org" target="_blank">Khan Academy</a> - Free courses in math, science, and more</li>
+              <li><a href="https://www.bbc.co.uk/bitesize" target="_blank">BBC Bitesize</a> - Interactive lessons and revision guides</li>
+              <li><a href="https://www.coursera.org" target="_blank">Coursera</a> - University-level courses from top institutions</li>
+              <li><a href="https://www.edx.org" target="_blank">edX</a> - Free online courses from universities worldwide</li>
+              <li><a href="https://www.duolingo.com" target="_blank">Duolingo</a> - Fun language learning app</li>
+            </ul>
+          </div>
+
+          <div class="resource-category">
+            <h3>🛠️ Educational Tools & Apps</h3>
+            <p>Powerful tools to enhance your learning experience and productivity.</p>
+            <ul>
+              <li><a href="https://www.desmos.com/calculator" target="_blank">Desmos Graphing Calculator</a> - Interactive math graphing</li>
+              <li><a href="https://quizlet.com" target="_blank">Quizlet</a> - Create and study flashcards</li>
+              <li><a href="https://www.typingclub.com" target="_blank">TypingClub</a> - Improve your typing speed and accuracy</li>
+              <li><a href="https://www.notion.so" target="_blank">Notion</a> - Organize notes and create study plans</li>
+              <li><a href="https://www.evernote.com" target="_blank">Evernote</a> - Digital notebook for capturing ideas</li>
+            </ul>
+          </div>
+
+          <div class="resource-category">
+            <h3>📖 Reference & Research</h3>
+            <p>Reliable sources for research, definitions, and academic writing.</p>
+            <ul>
+              <li><a href="https://www.dictionary.com" target="_blank">Dictionary.com</a> - Word definitions and thesaurus</li>
+              <li><a href="https://www.britannica.com" target="_blank">Encyclopædia Britannica</a> - Comprehensive encyclopedia</li>
+              <li><a href="https://www.worldbookonline.com" target="_blank">World Book</a> - Online encyclopedia for students</li>
+              <li><a href="https://www.easybib.com" target="_blank">EasyBib</a> - Citation and bibliography generator</li>
+              <li><a href="https://www.jstor.org" target="_blank">JSTOR</a> - Academic journals and research papers</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cta-section">
+          <h3>Need Help Finding Resources?</h3>
+          <p>Our library staff and teachers are here to help you find the perfect materials for your studies. Don't hesitate to ask!</p>
+          <a href="contact.html" class="btn-primary">Contact Our Library</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Light Peace Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

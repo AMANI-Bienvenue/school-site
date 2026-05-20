@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View our comprehensive academic timetable at Light Peace Academy - structured learning schedule designed for optimal student development.">
+  <meta name="keywords" content="Light Peace Academy timetable, academic schedule, class timetable, school schedule">
+  <meta name="author" content="Light Peace Academy">
+  <meta property="og:title" content="Academic Timetable - Light Peace Academy">
+  <meta property="og:description" content="Explore our well-structured academic timetable designed to provide comprehensive learning and balanced development.">
+  <meta property="og:image" content="images/timetable.jpg">
+  <meta property="og:type" content="website">
+  <title>Academic Timetable - Light Peace Academy</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div id="loading-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #058fca, #0277bd); z-index: 9999; display: flex; justify-content: center; align-items: center; transition: opacity 0.5s ease;">
+    <div style="text-align: center; color: white;">
+      <div style="width: 60px; height: 60px; border: 4px solid rgba(255,255,255,0.3); border-top: 4px solid #FFD700; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 20px;"></div>
+      <h3 style="font-size: 1.5rem; margin: 0;">Loading Timetable</h3>
+      <p style="opacity: 0.8; margin: 10px 0 0;">Preparing your schedule...</p>
+    </div>
+  </div>
+
+  <header style="background: linear-gradient(135deg, #0277bd, #058fca); color: white; padding: 15px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <div style="display: flex; align-items: center;">
+        <div style="width: 50px; height: 50px; background: #FFD700; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; font-weight: bold; font-size: 1.2rem; color: #0277bd;">A</div>
+        <h1 style="margin: 0; font-size: 1.8rem; font-weight: 700;">Light Peace Academy</h1>
+      </div>
+      <nav>
+        <ul style="display: flex; list-style: none; margin: 0; padding: 0; gap: 30px;">
+          <li><a href="index.html" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">Home</a></li>
+          <li class="dropdown" style="position: relative;">
+            <a href="#" onclick="return false;" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; cursor: pointer;">About</a>
+            <ul class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: white; min-width: 200px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; margin-top: 10px;">
+              <li><a href="history.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">History</a></li>
+              <li><a href="mission.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Mission</a></li>
+              <li><a href="vision.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Vision</a></li>
+              <li><a href="values.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Core Values</a></li>
+              <li><a href="facilities.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Facilities</a></li>
+              <li><a href="achievements.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; transition: all 0.3s ease;">Achievements</a></li>
+            </ul>
+          </li>
+          <li class="dropdown" style="position: relative;">
+            <a href="#" onclick="return false;" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; cursor: pointer; background: rgba(255,215,0,0.2); border: 2px solid #FFD700;">Academic</a>
+            <ul class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: white; min-width: 200px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; margin-top: 10px;">
+              <li><a href="staff.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Staff</a></li>
+              <li><a href="timetable.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease; background: rgba(255,215,0,0.1);">Timetable</a></li>
+              <li><a href="homeworks.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Homeworks</a></li>
+              <li><a href="results.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Results</a></li>
+              <li><a href="resources.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; transition: all 0.3s ease;">Resources</a></li>
+            </ul>
+          </li>
+          <li class="dropdown" style="position: relative;">
+            <a href="#" onclick="return false;" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; cursor: pointer;">School Life</a>
+            <ul class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: white; min-width: 200px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; margin-top: 10px;">
+              <li><a href="events.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Events</a></li>
+              <li><a href="gallery.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; transition: all 0.3s ease;">Gallery</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease;">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Timetable Hero Section -->
+    <section class="academic-hero">
+      <div class="academic-hero-content">
+        <h2>Academic Timetable</h2>
+        <p>Our carefully structured timetable ensures balanced learning with dedicated time for core subjects, electives, and extracurricular activities. Every minute is designed to maximize student potential and foster holistic development.</p>
+
+        <div class="academic-stats-grid">
+          <div class="academic-stat-item">
+            <div class="academic-stat-number counter" data-target="35">0</div>
+            <div class="academic-stat-label">Hours per Week</div>
+          </div>
+          <div class="academic-stat-item">
+            <div class="academic-stat-number counter" data-target="15">0</div>
+            <div class="academic-stat-label">Subjects Offered</div>
+          </div>
+          <div class="academic-stat-item">
+            <div class="academic-stat-number counter" data-target="8">0</div>
+            <div class="academic-stat-label">Periods per Day</div>
+          </div>
+          <div class="academic-stat-item">
+            <div class="academic-stat-number counter" data-target="25">0</div>
+            <div class="academic-stat-label">Students per Class</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Daily Schedule Overview -->
+    <section class="timetable-section">
+      <div class="container">
+        <h2>Daily Schedule Overview</h2>
+        <p>Our structured daily routine provides optimal learning conditions with dedicated time for academics, breaks, and extracurricular activities.</p>
+
+        <div class="timetable-showcase">
+          <div class="timetable-sessions">
+            <div class="session-card">
+              <div class="session-card-icon">🌅</div>
+              <h4>Morning Session</h4>
+              <p>7:30 AM - 1:00 PM</p>
+              <small>Core academic subjects with focused learning</small>
+            </div>
+
+            <div class="session-card">
+              <div class="session-card-icon">🍽️</div>
+              <h4>Lunch Break</h4>
+              <p>1:00 PM - 2:00 PM</p>
+              <small>Nutritious meals and relaxation time</small>
+            </div>
+
+            <div class="session-card">
+              <div class="session-card-icon">🌞</div>
+              <h4>Afternoon Session</h4>
+              <p>2:00 PM - 5:30 PM</p>
+              <small>Electives, activities, and specialized subjects</small>
+            </div>
+
+            <div class="session-card">
+              <div class="session-card-icon">📚</div>
+              <h4>Study Hours</h4>
+              <p>5:30 PM - 7:00 PM</p>
+              <small>Homework assistance and revision</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Weekly Timetable -->
+    <section class="academic-overview">
+      <div class="container">
+        <h2>Weekly Timetable Structure</h2>
+        <p>Our comprehensive weekly schedule covers all subjects with appropriate time allocation for each discipline.</p>
+
+        <div class="timetable-grid">
+          <div class="timetable-day">
+            <h3>📅 Monday</h3>
+            <div class="timetable-periods">
+              <div class="period">Mathematics (8:00-9:00)</div>
+              <div class="period">English (9:00-10:00)</div>
+              <div class="period">Physics (10:15-11:15)</div>
+              <div class="period">Chemistry (11:15-12:15)</div>
+              <div class="period">Physical Education (2:00-3:00)</div>
+              <div class="period">Art (3:00-4:00)</div>
+            </div>
+          </div>
+
+          <div class="timetable-day">
+            <h3>📅 Tuesday</h3>
+            <div class="timetable-periods">
+              <div class="period">Biology (8:00-9:00)</div>
+              <div class="period">Mathematics (9:00-10:00)</div>
+              <div class="period">History (10:15-11:15)</div>
+              <div class="period">Geography (11:15-12:15)</div>
+              <div class="period">Computer Science (2:00-3:00)</div>
+              <div class="period">Music (3:00-4:00)</div>
+            </div>
+          </div>
+
+          <div class="timetable-day">
+            <h3>📅 Wednesday</h3>
+            <div class="timetable-periods">
+              <div class="period">English Literature (8:00-9:00)</div>
+              <div class="period">Chemistry (9:00-10:00)</div>
+              <div class="period">Mathematics (10:15-11:15)</div>
+              <div class="period">Physics (11:15-12:15)</div>
+              <div class="period">Sports (2:00-3:00)</div>
+              <div class="period">Drama (3:00-4:00)</div>
+            </div>
+          </div>
+
+          <div class="timetable-day">
+            <h3>📅 Thursday</h3>
+            <div class="timetable-periods">
+              <div class="period">Geography (8:00-9:00)</div>
+              <div class="period">Biology (9:00-10:00)</div>
+              <div class="period">English (10:15-11:15)</div>
+              <div class="period">History (11:15-12:15)</div>
+              <div class="period">Art (2:00-3:00)</div>
+              <div class="period">Computer Science (3:00-4:00)</div>
+            </div>
+          </div>
+
+          <div class="timetable-day">
+            <h3>📅 Friday</h3>
+            <div class="timetable-periods">
+              <div class="period">Physics (8:00-9:00)</div>
+              <div class="period">Chemistry (9:00-10:00)</div>
+              <div class="period">Mathematics (10:15-11:15)</div>
+              <div class="period">English (11:15-12:15)</div>
+              <div class="period">Music (2:00-3:00)</div>
+              <div class="period">Physical Education (3:00-4:00)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Programs -->
+    <section class="academic-stats-section">
+      <div class="container">
+        <h2>Specialized Programs & Activities</h2>
+        <p>Beyond regular academics, we offer specialized programs to develop well-rounded individuals.</p>
+
+        <div class="academic-stats-cards">
+          <div class="academic-stat-card">
+            <div class="counter" data-target="5</div>
+            <h3>Languages Offered</h3>
+            <p>English, French, Spanish, Arabic, Mandarin</p>
+          </div>
+
+          <div class="academic-stat-card">
+            <div class="counter" data-target="12</div>
+            <h3>Sports Activities</h3>
+            <p>Football, basketball, swimming, tennis, athletics</p>
+          </div>
+
+          <div class="academic-stat-card">
+            <div class="counter" data-target="8</div>
+            <h3>Clubs & Societies</h3>
+            <p>Science, debate, art, music, drama, chess</p>
+          </div>
+
+          <div class="academic-stat-card">
+            <div class="counter" data-target="6</div>
+            <h3>Study Groups</h3>
+            <p>Small group tutoring and peer learning</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exam Schedule -->
+    <section class="resources-section">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 60px;">
+          <h2 style="color: #0277bd; font-size: 2.8rem; font-weight: 700; margin-bottom: 20px;">Examination Schedule</h2>
+          <p style="font-size: 1.2rem; color: #495057; max-width: 700px; margin: 0 auto; line-height: 1.6;">Strategic examination periods designed to assess student progress and prepare for national certifications.</p>
+        </div>
+
+        <div class="resources-grid">
+          <div class="resource-card">
+            <div class="resource-icon">📝</div>
+            <h3>Mid-Term Examinations</h3>
+            <p>Comprehensive assessments held mid-semester to track progress and identify areas for improvement.</p>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">🎯</div>
+            <h3>Final Examinations</h3>
+            <p>End-of-year examinations covering complete syllabus with focus on critical understanding.</p>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">📊</div>
+            <h3>Continuous Assessment</h3>
+            <p>Ongoing evaluation through quizzes, projects, and practical assessments throughout the year.</p>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">🏆</div>
+            <h3>National Examinations</h3>
+            <p>Preparation and participation in national certification examinations with excellent pass rates.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="academic-cta">
+      <div class="academic-cta-content">
+        <h2>Experience Structured Learning</h2>
+        <p>Join our academic community where every day is designed to maximize learning potential and foster holistic development.</p>
+
+        <div class="academic-cta-buttons">
+          <a href="contact.html" class="academic-btn-primary">
+            <span>📞</span>
+            Enroll Now
+          </a>
+          <a href="academic.html" class="academic-btn-secondary">
+            Back to Academic Overview
+          </a>
+        </div>
+
+        <div class="academic-features">
+          <div class="academic-feature">
+            <div class="academic-feature-icon">⏰</div>
+            <div class="academic-feature-text">Structured Schedule</div>
+          </div>
+          <div class="academic-feature">
+            <div class="academic-feature-icon">📚</div>
+            <div class="academic-feature-text">Comprehensive Curriculum</div>
+          </div>
+          <div class="academic-feature">
+            <div class="academic-feature-icon">🎓</div>
+            <div class="academic-feature-text">Academic Excellence</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Light Peace Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+      <div class="legend">
+        <h3>Subject Legend</h3>
+        <div class="legend-items">
+          <span class="legend-item math">Mathematics</span>
+          <span class="legend-item english">English</span>
+          <span class="legend-item science">Science</span>
+          <span class="legend-item history">History</span>
+          <span class="legend-item geography">Geography</span>
+          <span class="legend-item pe">Physical Education</span>
+          <span class="legend-item art">Art</span>
+          <span class="legend-item music">Music</span>
+          <span class="legend-item ict">ICT</span>
+          <span class="legend-item french">French</span>
+          <span class="legend-item library">Library</span>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>8:00 - 9:30</th>
+            <th>9:45 - 11:15</th>
+            <th>11:30 - 1:00</th>
+            <th>2:00 - 3:30</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td class="subject-math">Mathematics<br><small>Ms. Aline Uwase</small></td>
+            <td class="subject-english">English<br><small>Ms. Grace Mutesi</small></td>
+            <td class="subject-science">Science<br><small>Mr. Eric Niyonzima</small></td>
+            <td class="subject-ict">ICT</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td class="subject-geography">Geography</td>
+            <td class="subject-math">Mathematics<br><small>Ms. Aline Uwase</small></td>
+            <td class="subject-science">Biology<br><small>Mr. Eric Niyonzima</small></td>
+            <td class="subject-pe">Physical Education</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td class="subject-history">History<br><small>Mr. Paul Habimana</small></td>
+            <td class="subject-science">Chemistry<br><small>Mr. Eric Niyonzima</small></td>
+            <td class="subject-english">English<br><small>Ms. Grace Mutesi</small></td>
+            <td class="subject-art">Art</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td class="subject-math">Mathematics<br><small>Ms. Aline Uwase</small></td>
+            <td class="subject-science">Physics<br><small>Mr. Eric Niyonzima</small></td>
+            <td class="subject-english">Literature<br><small>Ms. Grace Mutesi</small></td>
+            <td class="subject-music">Music</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td class="subject-science">Science<br><small>Mr. Eric Niyonzima</small></td>
+            <td class="subject-ict">ICT</td>
+            <td class="subject-french">French</td>
+            <td class="subject-library">Library</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="timetable-actions">
+        <button id="print-timetable" class="btn">Print Timetable</button>
+      </div>
+    </section>
+
+    <section class="additional-info">
+      <h2>Additional Academic Information</h2>
+      <div class="info-grid">
+        <div class="info-item">
+          <h3>School Hours</h3>
+          <p>Monday to Friday: 8:00 AM - 3:30 PM</p>
+          <p>Saturday: Closed (except for extracurricular activities)</p>
+          <p>Sunday: Closed</p>
+        </div>
+        <div class="info-item">
+          <h3>Break Times</h3>
+          <ul>
+            <li>Morning Break: 9:30 AM - 9:45 AM</li>
+            <li>Lunch Break: 11:15 AM - 2:00 PM</li>
+            <li>Afternoon Break: 1:00 PM - 2:00 PM</li>
+          </ul>
+        </div>
+        <div class="info-item">
+          <h3>Exam Schedule</h3>
+          <p>Mid-term Exams: End of February and June</p>
+          <p>Final Exams: End of May and November</p>
+          <p>Supplementary Exams: As needed</p>
+        </div>
+        <div class="info-item">
+          <h3>Academic Calendar</h3>
+          <p>School Year: September to June</p>
+          <p>Holidays: Christmas (2 weeks), Easter (1 week), National holidays</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Light Peace Academy. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

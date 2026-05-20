@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Connect with Light Peace Academy - Get in touch with our dedicated team for admissions, inquiries, and support. Visit us in Gisozi, Kigali City, Rwanda.">
+  <meta name="keywords" content="Light Peace Academy contact, school admissions, Kigali Rwanda, school inquiries, contact form, school location, Gisozi">
+  <meta name="author" content="Light Peace Academy">
+  <meta property="og:title" content="Contact Us - Light Peace Academy">
+  <meta property="og:description" content="Connect with Light Peace Academy - Your gateway to quality education in Kigali City, Rwanda. Reach out for admissions and inquiries.">
+  <meta property="og:image" content="images/contact.jpg">
+  <meta property="og:type" content="website">
+  <title>Contact Us - Light Peace Academy | Connect with Excellence</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <style>
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .contact-hero {
+      background: linear-gradient(135deg, rgba(5,143,202,0.9), rgba(2,119,189,0.9)), url('images/contact-hero.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 120px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .contact-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,%3csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3e%3cdefs%3e%3cpattern id=%22contact-pattern%22 width=%22100%22 height=%22100%22 patternUnits=%22userSpaceOnUse%22%3e%3ccircle cx=%2225%22 cy=%2225%22 r=%221%22 fill=%22white%22 opacity=%220.1%22/%3e%3ccircle cx=%2275%22 cy=%2275%22 r=%221%22 fill=%22white%22 opacity=%220.1%22/%3e%3ccircle cx=%2250%22 cy=%2210%22 r=%220.5%22 fill=%22white%22 opacity=%220.15%22/%3e%3ccircle cx=%2210%22 cy=%2250%22 r=%220.5%22 fill=%22white%22 opacity=%220.15%22/%3e%3ccircle cx=%2290%22 cy=%2230%22 r=%220.5%22 fill=%22white%22 opacity=%220.1%22/%3e%3c/pattern%3e%3c/defs%3e%3crect width=%22100%22 height=%22100%22 fill=%22url(%23contact-pattern)%22/%3e%3c/svg%3e');
+      opacity: 0.3;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin: 60px 0;
+    }
+    .contact-card {
+      background: white;
+      border-radius: 20px;
+      padding: 40px 30px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid rgba(5,143,202,0.1);
+    }
+    .contact-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+    .contact-icon {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #058fca, #0277bd);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 2rem;
+      color: white;
+    }
+    .contact-form-section {
+      background: #f8f9fa;
+      padding: 80px 0;
+    }
+    .contact-form-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 20px;
+      padding: 50px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    }
+    .form-group {
+      margin-bottom: 25px;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #0277bd;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 15px;
+      border: 2px solid #e9ecef;
+      border-radius: 10px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+      box-sizing: border-box;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: #058fca;
+      box-shadow: 0 0 0 3px rgba(5,143,202,0.1);
+    }
+    .submit-btn {
+      background: linear-gradient(135deg, #058fca, #0277bd);
+      color: white;
+      border: none;
+      padding: 15px 40px;
+      border-radius: 25px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 100%;
+    }
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(5,143,202,0.3);
+    }
+    .map-section {
+      padding: 80px 0;
+      background: white;
+    }
+    .map-container {
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+      height: 400px;
+      background: #f8f9fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px dashed #058fca;
+    }
+    .faq-section {
+      background: #f8f9fa;
+      padding: 80px 0;
+    }
+    .faq-item {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      border-left: 5px solid #058fca;
+    }
+    .faq-question {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #0277bd;
+      margin-bottom: 10px;
+    }
+    .faq-answer {
+      color: #666;
+      line-height: 1.6;
+    }
+    .office-hours {
+      background: linear-gradient(135deg, #0277bd, #058fca);
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+    .hours-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .hours-card {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 30px;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .hours-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    .hours-time {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    @media (max-width: 768px) {
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+      .contact-hero {
+        padding: 80px 20px;
+      }
+      .contact-form-container {
+        margin: 20px;
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div id="loading-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #058fca, #0277bd); z-index: 9999; display: flex; justify-content: center; align-items: center; transition: opacity 0.5s ease;">
+    <div style="text-align: center; color: white;">
+      <div style="width: 60px; height: 60px; border: 4px solid rgba(255,255,255,0.3); border-top: 4px solid #FFD700; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 20px;"></div>
+      <h3 style="font-size: 1.5rem; margin: 0;">Loading Contact</h3>
+      <p style="opacity: 0.8; margin: 10px 0 0;">Connecting you with excellence...</p>
+    </div>
+  </div>
+
+  <header style="background: linear-gradient(135deg, #0277bd, #058fca); color: white; padding: 15px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <div style="display: flex; align-items: center;">
+        <div style="width: 50px; height: 50px; background: #FFD700; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; font-weight: bold; font-size: 1.2rem; color: #0277bd;">A</div>
+        <h1 style="margin: 0; font-size: 1.8rem; font-weight: 700;">Light Peace Academy</h1>
+      </div>
+      <nav>
+        <ul style="display: flex; list-style: none; margin: 0; padding: 0; gap: 30px;">
+          <li><a href="index.html" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">Home</a></li>
+          <li class="dropdown" style="position: relative;">
+            <a href="#" onclick="return false;" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; cursor: pointer;">About</a>
+            <ul class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: white; min-width: 200px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; margin-top: 10px;">
+              <li><a href="history.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">History</a></li>
+              <li><a href="mission.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Mission</a></li>
+              <li><a href="vision.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Vision</a></li>
+              <li><a href="values.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Core Values</a></li>
+              <li><a href="facilities.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Facilities</a></li>
+              <li><a href="achievements.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; transition: all 0.3s ease;">Achievements</a></li>
+            </ul>
+          </li>
+          <li class="dropdown" style="position: relative;">
+            <a href="#" onclick="return false;" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; cursor: pointer;">Academic</a>
+            <ul class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: white; min-width: 200px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; margin-top: 10px;">
+              <li><a href="staff.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Staff</a></li>
+              <li><a href="timetable.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Timetable</a></li>
+              <li><a href="homeworks.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Homeworks</a></li>
+              <li><a href="results.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Results</a></li>
+              <li><a href="resources.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; transition: all 0.3s ease;">Resources</a></li>
+            </ul>
+          </li>
+          <li class="dropdown" style="position: relative;">
+            <a href="#" onclick="return false;" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; cursor: pointer;">School Life</a>
+            <ul class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: white; min-width: 200px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; margin-top: 10px;">
+              <li><a href="events.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Events</a></li>
+              <li><a href="gallery.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; transition: all 0.3s ease;">Gallery</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; background: rgba(255,215,0,0.2); border: 2px solid #FFD700;">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="contact-hero">
+      <div class="container" style="position: relative; z-index: 2;">
+        <div style="display: inline-block; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 50px; padding: 20px 30px; margin-bottom: 30px; border: 1px solid rgba(255,255,255,0.2);">
+          <span style="font-size: 1.1rem; font-weight: 500;">📞 Let's Connect</span>
+        </div>
+        <h2 style="font-size: 3.5rem; margin-bottom: 25px; text-shadow: 3px 3px 6px rgba(0,0,0,0.4); font-weight: 700; line-height: 1.1;">Get in Touch with<br>Light Peace Academy</h2>
+        <p style="font-size: 1.4rem; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.6; opacity: 0.95;">Ready to join our community of excellence? We're here to answer your questions, guide you through admissions, and help you discover the Light Peace Academy difference.</p>
+
+        <div style="display: flex; justify-content: center; gap: 40px; margin-top: 50px; margin-bottom: 50px;">
+          <div style="text-align: center; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 20px; padding: 30px 25px; border: 1px solid rgba(255,255,255,0.2); min-width: 140px;">
+            <div style="font-size: 2rem; margin-bottom: 10px;">📧</div>
+            <div style="font-size: 1.8rem; font-weight: 700; margin-bottom: 5px;">24/7</div>
+            <div style="opacity: 0.9;">Response Time</div>
+          </div>
+          <div style="text-align: center; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 20px; padding: 30px 25px; border: 1px solid rgba(255,255,255,0.2); min-width: 140px;">
+            <div style="font-size: 2rem; margin-bottom: 10px;">🎓</div>
+            <div style="font-size: 1.8rem; font-weight: 700; margin-bottom: 5px;">500+</div>
+            <div style="opacity: 0.9;">Students Helped</div>
+          </div>
+          <div style="text-align: center; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 20px; padding: 30px 25px; border: 1px solid rgba(255,255,255,0.2); min-width: 140px;">
+            <div style="font-size: 2rem; margin-bottom: 10px;">⭐</div>
+            <div style="font-size: 1.8rem; font-weight: 700; margin-bottom: 5px;">4.9/5</div>
+            <div style="opacity: 0.9;">Satisfaction Rate</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Information Cards -->
+    <section style="padding: 80px 0; background: #f8f9fa;">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 60px;">
+          <h2 style="font-size: 2.5rem; color: #0277bd; margin-bottom: 20px; font-weight: 700;">Multiple Ways to Reach Us</h2>
+          <p style="font-size: 1.2rem; color: #666; max-width: 600px; margin: 0 auto; line-height: 1.6;">Choose the method that works best for you. Our dedicated team is available through various channels to assist you with your educational journey.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <h3 style="color: #0277bd; margin-bottom: 15px; font-size: 1.3rem; font-weight: 700;">Visit Our Campus</h3>
+            <p style="color: #666; line-height: 1.6; margin-bottom: 20px;">Experience Light Peace Academy firsthand. Schedule a campus tour and meet our community.</p>
+            <div style="font-weight: 600; color: #0277bd;">Gisozi, Kigali City<br>Rwanda</div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">📞</div>
+            <h3 style="color: #0277bd; margin-bottom: 15px; font-size: 1.3rem; font-weight: 700;">Call Us</h3>
+            <p style="color: #666; line-height: 1.6; margin-bottom: 20px;">Speak directly with our admissions team for immediate assistance and guidance.</p>
+            <div style="font-weight: 600; color: #0277bd;">+250 788 123 456</div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">✉️</div>
+            <h3 style="color: #0277bd; margin-bottom: 15px; font-size: 1.3rem; font-weight: 700;">Email Us</h3>
+            <p style="color: #666; line-height: 1.6; margin-bottom: 20px;">Send us your questions and we'll respond within 24 hours with detailed information.</p>
+            <div style="font-weight: 600; color: #0277bd;">kigaliilim@gmail.rw</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 50px;">
+          <h2 style="font-size: 2.5rem; color: #0277bd; margin-bottom: 20px; font-weight: 700;">Send Us a Message</h2>
+          <p style="font-size: 1.2rem; color: #666; max-width: 600px; margin: 0 auto; line-height: 1.6;">Have questions about admissions, academics, or our programs? Fill out the form below and we'll get back to you promptly.</p>
+        </div>
+
+        <div class="contact-form-container">
+          <form action="#" method="post">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="admissions">Admissions Inquiry</option>
+                <option value="academics">Academic Information</option>
+                <option value="tour">Campus Tour Request</option>
+                <option value="general">General Inquiry</option>
+                <option value="support">Student Support</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message *</label>
+              <textarea id="message" name="message" rows="6" placeholder="Tell us how we can help you..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 50px;">
+          <h2 style="font-size: 2.5rem; color: #0277bd; margin-bottom: 20px; font-weight: 700;">Find Us on the Map</h2>
+          <p style="font-size: 1.2rem; color: #666; max-width: 600px; margin: 0 auto; line-height: 1.6;">Located in the heart of Gisozi, Kigali City, our campus is easily accessible and surrounded by beautiful surroundings.</p>
+        </div>
+
+        <div class="map-container">
+          <div style="text-align: center; color: #666;">
+            <div style="font-size: 3rem; margin-bottom: 20px;">🗺️</div>
+            <h3 style="margin-bottom: 10px; color: #0277bd;">Interactive Map Coming Soon</h3>
+            <p style="margin-bottom: 20px;">We're working on integrating an interactive map to help you navigate to our campus.</p>
+            <div style="font-weight: 600;">Gisozi, Kigali City, Rwanda</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Office Hours Section -->
+    <section class="office-hours">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 50px;">
+          <h2 style="font-size: 2.5rem; margin-bottom: 20px; font-weight: 700;">When to Reach Us</h2>
+          <p style="font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto; line-height: 1.6;">Our team is available through various channels to assist you with your educational journey.</p>
+        </div>
+
+        <div class="hours-grid">
+          <div class="hours-card">
+            <div class="hours-title">📚 Academic Office</div>
+            <div class="hours-time">Monday - Friday<br>8:00 AM - 5:00 PM</div>
+          </div>
+          <div class="hours-card">
+            <div class="hours-title">🎓 Admissions</div>
+            <div class="hours-time">Monday - Saturday<br>9:00 AM - 6:00 PM</div>
+          </div>
+          <div class="hours-card">
+            <div class="hours-title">📞 Phone Support</div>
+            <div class="hours-time">Monday - Friday<br>8:00 AM - 8:00 PM</div>
+          </div>
+          <div class="hours-card">
+            <div class="hours-title">✉️ Email Response</div>
+            <div class="hours-time">24/7<br>Within 24 hours</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 50px;">
+          <h2 style="font-size: 2.5rem; color: #0277bd; margin-bottom: 20px; font-weight: 700;">Frequently Asked Questions</h2>
+          <p style="font-size: 1.2rem; color: #666; max-width: 600px; margin: 0 auto; line-height: 1.6;">Quick answers to common questions about Light Peace Academy admissions and programs.</p>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto;">
+          <div class="faq-item">
+            <div class="faq-question">How do I apply for admission?</div>
+            <div class="faq-answer">You can apply online through our admissions portal or visit our campus to pick up an application form. Our admissions team will guide you through the entire process.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">What documents do I need for admission?</div>
+            <div class="faq-answer">Required documents include birth certificate, previous school records, medical records, and passport-sized photos. International students may need additional documentation.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">Are there scholarships available?</div>
+            <div class="faq-answer">Yes, we offer merit-based and need-based scholarships. Contact our admissions office to learn about eligibility criteria and application deadlines.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">Can I schedule a campus tour?</div>
+            <div class="faq-answer">Absolutely! We encourage prospective students and families to visit our campus. Tours are available Monday through Saturday. Please call ahead to schedule your visit.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section style="background: linear-gradient(135deg, #0277bd, #058fca); color: white; padding: 80px 0; text-align: center;">
+      <div class="container">
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px; font-weight: 700;">Ready to Join Our Community?</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 40px; opacity: 0.9; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">Take the first step towards an exceptional educational experience. Contact us today to learn more about admissions, programs, and how Light Peace Academy can shape your future.</p>
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+          <a href="tel:+250788123456" style="background: #FFD700; color: #0277bd; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: 600; transition: transform 0.3s ease;">📞 Call Now</a>
+          <a href="mailto:mnbienvenue@gmail.com" style="background: rgba(255,255,255,0.2); color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: 600; border: 1px solid rgba(255,255,255,0.3); transition: background 0.3s ease;">✉️ Email Us</a>
+          <a href="#contact-form" style="background: rgba(255,255,255,0.2); color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: 600; border: 1px solid rgba(255,255,255,0.3); transition: background 0.3s ease;">📝 Send Message</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Professional Footer -->
+  <footer style="background: #1a237e; color: white; padding: 60px 0 30px;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
+        <div>
+          <div style="display: flex; align-items: center; margin-bottom: 20px;">
+            <div style="width: 40px; height: 40px; background: #FFD700; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 10px; font-weight: bold; color: #0277bd;">A</div>
+            <h3 style="margin: 0; font-size: 1.5rem; font-weight: 700;">Light Peace Academy</h3>
+          </div>
+          <p style="opacity: 0.8; line-height: 1.6; margin-bottom: 20px;">Nurturing minds, building futures, and creating leaders of tomorrow through excellence in education.</p>
+          <div style="display: flex; gap: 15px;">
+            <a href="#" style="color: white; font-size: 1.5rem; transition: color 0.3s ease;">📘</a>
+            <a href="#" style="color: white; font-size: 1.5rem; transition: color 0.3s ease;">📷</a>
+            <a href="#" style="color: white; font-size: 1.5rem; transition: color 0.3s ease;">🐦</a>
+            <a href="#" style="color: white; font-size: 1.5rem; transition: color 0.3s ease;">💼</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 style="margin-bottom: 20px; font-size: 1.2rem; font-weight: 700;">Quick Links</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 10px;"><a href="index.html" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.3s ease;">Home</a></li>
+            <li style="margin-bottom: 10px;"><a href="about.html" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.3s ease;">About Us</a></li>
+            <li style="margin-bottom: 10px;"><a href="staff.html" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.3s ease;">Academic Staff</a></li>
+            <li style="margin-bottom: 10px;"><a href="facilities.html" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.3s ease;">Facilities</a></li>
+            <li style="margin-bottom: 10px;"><a href="gallery.html" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.3s ease;">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="margin-bottom: 20px; font-size: 1.2rem; font-weight: 700;">Contact Info</h4>
+          <div style="margin-bottom: 15px;">
+            <strong style="display: block; margin-bottom: 5px;">Address</strong>
+            <span style="opacity: 0.8;">Gisozi, Kigali City, Rwanda</span>
+          </div>
+          <div style="margin-bottom: 15px;">
+            <strong style="display: block; margin-bottom: 5px;">Phone</strong>
+            <span style="opacity: 0.8;">+250 788 123 456</span>
+          </div>
+          <div style="margin-bottom: 15px;">
+            <strong style="display: block; margin-bottom: 5px;">Email</strong>
+            <span style="opacity: 0.8;">mnbienvenue@gmail.com</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 style="margin-bottom: 20px; font-size: 1.2rem; font-weight: 700;">Newsletter</h4>
+          <p style="opacity: 0.8; margin-bottom: 15px; line-height: 1.5;">Stay updated with school news, events, and achievements.</p>
+          <div style="display: flex; gap: 10px;">
+            <input type="email" placeholder="Your email" style="flex: 1; padding: 10px; border: none; border-radius: 5px; background: rgba(255,255,255,0.1); color: white;">
+            <button style="background: #FFD700; color: #0277bd; border: none; padding: 10px 15px; border-radius: 5px; font-weight: 600; cursor: pointer;">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; text-align: center;">
+        <p style="margin: 0; opacity: 0.7;">&copy; 2025 Light Peace Academy. All rights reserved. | Designed with ❤️ for educational excellence.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    // Loading animation
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        document.getElementById('loading-overlay').style.opacity = '0';
+        setTimeout(function() {
+          document.getElementById('loading-overlay').style.display = 'none';
+        }, 500);
+      }, 1000);
+    });
+
+    // Form submission handler
+    document.querySelector('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message! We will get back to you within 24 hours.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

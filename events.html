@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover exciting events and activities at Light Peace Academy - from academic competitions to cultural celebrations that enrich student life.">
+  <meta name="keywords" content="Light Peace Academy events, school activities, competitions, celebrations, cultural festivals, sports day">
+  <meta name="author" content="Light Peace Academy">
+  <meta property="og:title" content="School Events & Activities - Light Peace Academy">
+  <meta property="og:description" content="Join us for memorable experiences that celebrate learning, creativity, and community spirit at Light Peace Academy.">
+  <meta property="og:image" content="images/events.jpg">
+  <meta property="og:type" content="website">
+  <title>School Events & Activities - Light Peace Academy</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div id="loading-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #058fca, #0277bd); z-index: 9999; display: flex; justify-content: center; align-items: center; transition: opacity 0.5s ease;">
+    <div style="text-align: center; color: white;">
+      <div style="width: 60px; height: 60px; border: 4px solid rgba(255,255,255,0.3); border-top: 4px solid #FFD700; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 20px;"></div>
+      <h3 style="font-size: 1.5rem; margin: 0;">Loading Events</h3>
+      <p style="opacity: 0.8; margin: 10px 0 0;">Discover our exciting activities...</p>
+    </div>
+  </div>
+
+  <header style="background: linear-gradient(135deg, #0277bd, #058fca); color: white; padding: 15px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <div style="display: flex; align-items: center;">
+        <div style="width: 50px; height: 50px; background: #FFD700; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; font-weight: bold; font-size: 1.2rem; color: #0277bd;">A</div>
+        <h1 style="margin: 0; font-size: 1.8rem; font-weight: 700;">Light Peace Academy</h1>
+      </div>
+      <nav>
+        <ul style="display: flex; list-style: none; margin: 0; padding: 0; gap: 30px;">
+          <li><a href="index.html" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">Home</a></li>
+          <li class="dropdown" style="position: relative;">
+            <a href="#" onclick="return false;" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; cursor: pointer;">About</a>
+            <ul class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: white; min-width: 200px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; margin-top: 10px;">
+              <li><a href="history.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">History</a></li>
+              <li><a href="mission.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Mission</a></li>
+              <li><a href="vision.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Vision</a></li>
+              <li><a href="values.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Core Values</a></li>
+              <li><a href="facilities.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Facilities</a></li>
+              <li><a href="achievements.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; transition: all 0.3s ease;">Achievements</a></li>
+            </ul>
+          </li>
+          <li class="dropdown" style="position: relative;">
+            <a href="#" onclick="return false;" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; cursor: pointer;">Academic</a>
+            <ul class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: white; min-width: 200px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; margin-top: 10px;">
+              <li><a href="staff.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Staff</a></li>
+              <li><a href="timetable.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Timetable</a></li>
+              <li><a href="homeworks.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Homeworks</a></li>
+              <li><a href="results.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Results</a></li>
+              <li><a href="resources.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; transition: all 0.3s ease;">Resources</a></li>
+            </ul>
+          </li>
+          <li class="dropdown" style="position: relative;">
+            <a href="#" onclick="return false;" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; cursor: pointer; background: rgba(255,215,0,0.2); border: 2px solid #FFD700;">School Life</a>
+            <ul class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: white; min-width: 200px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; margin-top: 10px;">
+              <li><a href="events.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease; background: rgba(255,215,0,0.1);">Events</a></li>
+              <li><a href="gallery.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; transition: all 0.3s ease;">Gallery</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease;">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Events Hero Section -->
+    <section class="academic-hero">
+      <div class="academic-hero-content">
+        <h2>School Events & Activities</h2>
+        <p>Experience the vibrant spirit of Light Peace Academy through our diverse range of events, celebrations, and activities that foster learning, creativity, and community engagement.</p>
+
+        <div class="academic-stats-grid">
+          <div class="academic-stat-item">
+            <div class="academic-stat-number counter" data-target="50">0</div>
+            <div class="academic-stat-label">Events Annually</div>
+          </div>
+          <div class="academic-stat-item">
+            <div class="academic-stat-number counter" data-target="95">0</div>
+            <div class="academic-stat-label">Participation Rate</div>
+          </div>
+          <div class="academic-stat-item">
+            <div class="academic-stat-number counter" data-target="12">0</div>
+            <div class="academic-stat-label">Event Categories</div>
+          </div>
+          <div class="academic-stat-item">
+            <div class="academic-stat-number counter" data-target="500">0</div>
+            <div class="academic-stat-label">Students Involved</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Events -->
+    <section class="academic-overview">
+      <div class="container">
+        <h2>Featured Events</h2>
+        <p>Highlighting our most exciting upcoming events that showcase the talents and achievements of our students.</p>
+
+        <div class="academic-grid">
+          <div class="academic-card">
+            <div class="academic-card-icon">🎓</div>
+            <h3>Science Fair</h3>
+            <p>October 15, 2025</p>
+            <p>Students showcase innovative science projects and compete for exciting prizes. Parents and community members are welcome to attend and vote for their favorites!</p>
+          </div>
+
+          <div class="academic-card">
+            <div class="academic-card-icon">⚽</div>
+            <h3>Sports Day</h3>
+            <p>November 5, 2025</p>
+            <p>A thrilling day of athletic competitions, team games, and fun activities. Cheer for your classmates and enjoy the spirit of healthy competition!</p>
+          </div>
+
+          <div class="academic-card">
+            <div class="academic-card-icon">🎭</div>
+            <h3>Cultural Festival</h3>
+            <p>January 25, 2026</p>
+            <p>Experience the rich diversity of our student body through music, dance, food, and traditional performances from various cultures.</p>
+          </div>
+
+          <div class="academic-card">
+            <div class="academic-card-icon">🎨</div>
+            <h3>Art Exhibition</h3>
+            <p>March 15, 2026</p>
+            <p>Showcase of student artwork, from paintings to sculptures. Discover the creative talents blossoming at Light Peace Academy!</p>
+          </div>
+
+          <div class="academic-card">
+            <div class="academic-card-icon">🏆</div>
+            <h3>End-of-Term Celebration</h3>
+            <p>December 20, 2025</p>
+            <p>Celebrate the achievements of the term with student performances, award presentations, and a festive atmosphere.</p>
+          </div>
+
+          <div class="academic-card">
+            <div class="academic-card-icon">📚</div>
+            <h3>Parent-Teacher Conference</h3>
+            <p>February 10, 2026</p>
+            <p>An opportunity for parents to discuss their child's progress, set goals, and collaborate on their educational journey.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Categories -->
+    <section class="academic-staff">
+      <div class="container">
+        <h2>Event Categories</h2>
+        <p>Our diverse range of events caters to different interests and celebrates various aspects of student development.</p>
+
+        <div class="staff-grid">
+          <div class="staff-card">
+            <div class="staff-header">
+              <div class="staff-header-icon">🎓</div>
+              <h3>Academic Events</h3>
+              <p>Competitions & Learning</p>
+            </div>
+            <div class="staff-content">
+              <p>Science fairs, spelling bees, mathematics competitions, and academic challenges that promote intellectual growth and achievement.</p>
+              <div class="staff-meta">
+                <span>📅 Monthly Events</span>
+                <span>⭐ High Participation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="staff-card">
+            <div class="staff-header">
+              <div class="staff-header-icon">⚽</div>
+              <h3>Sports & Athletics</h3>
+              <p>Physical Activities</p>
+            </div>
+            <div class="staff-content">
+              <p>Sports days, inter-house competitions, fitness challenges, and recreational activities that promote health and teamwork.</p>
+              <div class="staff-meta">
+                <span>🏃 Regular Training</span>
+                <span>🥇 Championship Events</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="staff-card">
+            <div class="staff-header">
+              <div class="staff-header-icon">🎨</div>
+              <h3>Arts & Culture</h3>
+              <p>Creative Expression</p>
+            </div>
+            <div class="staff-content">
+              <p>Art exhibitions, music concerts, drama productions, and cultural festivals celebrating creativity and diversity.</p>
+              <div class="staff-meta">
+                <span>🎭 Annual Festivals</span>
+                <span>🌟 Talent Showcases</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="staff-card">
+            <div class="staff-header">
+              <div class="staff-header-icon">🤝</div>
+              <h3>Community Events</h3>
+              <p>School & Family</p>
+            </div>
+            <div class="staff-content">
+              <p>Open days, parent-teacher conferences, charity events, and community service activities that strengthen school-family bonds.</p>
+              <div class="staff-meta">
+                <span>👨‍👩‍👧‍👦 Family Involvement</span>
+                <span>❤️ Community Impact</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="staff-card">
+            <div class="staff-header">
+              <div class="staff-header-icon">🎉</div>
+              <h3>Celebrations</h3>
+              <p>Special Occasions</p>
+            </div>
+            <div class="staff-content">
+              <p>End-of-term celebrations, graduation ceremonies, award nights, and special milestone events that mark achievements.</p>
+              <div class="staff-meta">
+                <span>🎊 Termly Celebrations</span>
+                <span>🏅 Achievement Recognition</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="staff-card">
+            <div class="staff-header">
+              <div class="staff-header-icon">🌱</div>
+              <h3>Educational Trips</h3>
+              <p>Learning Experiences</p>
+            </div>
+            <div class="staff-content">
+              <p>Field trips, educational excursions, and outdoor learning experiences that complement classroom education.</p>
+              <div class="staff-meta">
+                <span>🚌 Safe Transportation</span>
+                <span>📖 Curriculum-Aligned</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Impact -->
+    <section class="academic-stats-section">
+      <div class="container">
+        <h2>Event Impact & Benefits</h2>
+        <p>Our events go beyond entertainment - they contribute significantly to student development and school community building.</p>
+
+        <div class="academic-stats-cards">
+          <div class="academic-stat-card">
+            <div class="counter" data-target">85</div>
+            <h3>Skill Development</h3>
+            <p>Students develop leadership, teamwork, and communication skills</p>
+          </div>
+
+          <div class="academic-stat-card">
+            <div class="counter" data-target">92</div>
+            <h3>Community Engagement</h3>
+            <p>Parents and community members actively participate</p>
+          </div>
+
+          <div class="academic-stat-card">
+            <div class="counter" data-target">78</div>
+            <h3>Student Confidence</h3>
+            <p>Events boost self-esteem and public speaking abilities</p>
+          </div>
+
+          <div class="academic-stat-card">
+            <div class="counter" data-target">95</div>
+            <h3>Memorable Experiences</h3>
+            <p>Creating lasting memories and school spirit</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Events Calendar -->
+    <section class="resources-section">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 60px;">
+          <h2 style="color: #0277bd; font-size: 2.8rem; font-weight: 700; margin-bottom: 20px;">Upcoming Events Calendar</h2>
+          <p style="font-size: 1.2rem; color: #495057; max-width: 700px; margin: 0 auto; line-height: 1.6;">Mark your calendars for these exciting events that will enrich our school community throughout the year.</p>
+        </div>
+
+        <div class="resources-grid">
+          <div class="resource-card">
+            <div class="resource-icon">🧪</div>
+            <h3>Annual Science Fair</h3>
+            <p>October 15, 2025 - School Auditorium</p>
+            <p>Showcase of student research projects and scientific innovations. Open to all grades with exciting prizes and recognitions.</p>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">🏃‍♂️</div>
+            <h3>Inter-House Sports Championship</h3>
+            <p>November 5-7, 2025 - School Grounds</p>
+            <p>Three days of intense competition across multiple sports categories. Building teamwork and sportsmanship spirit.</p>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">🎄</div>
+            <h3>Winter Celebration</h3>
+            <p>December 20, 2025 - School Hall</p>
+            <p>Festive performances, award presentations, and community celebrations marking the end of the academic term.</p>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">🌍</div>
+            <h3>Cultural Diversity Festival</h3>
+            <p>January 25, 2026 - School Campus</p>
+            <p>Celebrating our rich cultural heritage through food, music, dance, and traditional performances from around the world.</p>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">📖</div>
+            <h3>Parent-Teacher Conferences</h3>
+            <p>February 10-14, 2026 - Classrooms</p>
+            <p>Scheduled meetings to discuss student progress, set goals, and plan for continued academic success.</p>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">🎨</div>
+            <h3>Spring Art Exhibition</h3>
+            <p>March 15, 2026 - Art Gallery</p>
+            <p>Display of student artwork, photography, and creative projects showcasing artistic talents and imagination.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="academic-cta">
+      <div class="academic-cta-content">
+        <h2>Join Our Vibrant Community</h2>
+        <p>Be part of the exciting events and activities that make Light Peace Academy a place of celebration, learning, and unforgettable experiences.</p>
+
+        <div class="academic-cta-buttons">
+          <a href="contact.html" class="academic-btn-primary">
+            <span>📅</span>
+            Get Event Updates
+          </a>
+          <a href="gallery.html" class="academic-btn-secondary">
+            View Event Gallery
+          </a>
+        </div>
+
+        <div class="academic-features">
+          <div class="academic-feature">
+            <div class="academic-feature-icon">🎉</div>
+            <div class="academic-feature-text">Celebrating Achievement</div>
+          </div>
+          <div class="academic-feature">
+            <div class="academic-feature-icon">🤝</div>
+            <div class="academic-feature-text">Building Community</div>
+          </div>
+          <div class="academic-feature">
+            <div class="academic-feature-icon">🌟</div>
+            <div class="academic-feature-text">Creating Memories</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Light Peace Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

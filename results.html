@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View outstanding academic results and achievements at Light Peace Academy - demonstrating excellence in education and student success.">
+  <meta name="keywords" content="Light Peace Academy results, academic achievements, exam results, student success">
+  <meta name="author" content="Light Peace Academy">
+  <meta property="og:title" content="Academic Results & Achievements - Light Peace Academy">
+  <meta property="og:description" content="Explore outstanding academic results and achievements that demonstrate our commitment to educational excellence.">
+  <meta property="og:image" content="images/results.jpg">
+  <meta property="og:type" content="website">
+  <title>Academic Results & Achievements - Light Peace Academy</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div id="loading-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #058fca, #0277bd); z-index: 9999; display: flex; justify-content: center; align-items: center; transition: opacity 0.5s ease;">
+    <div style="text-align: center; color: white;">
+      <div style="width: 60px; height: 60px; border: 4px solid rgba(255,255,255,0.3); border-top: 4px solid #FFD700; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 20px;"></div>
+      <h3 style="font-size: 1.5rem; margin: 0;">Loading Results</h3>
+      <p style="opacity: 0.8; margin: 10px 0 0;">Preparing academic achievements...</p>
+    </div>
+  </div>
+
+  <header style="background: linear-gradient(135deg, #0277bd, #058fca); color: white; padding: 15px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <div style="display: flex; align-items: center;">
+        <div style="width: 50px; height: 50px; background: #FFD700; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; font-weight: bold; font-size: 1.2rem; color: #0277bd;">A</div>
+        <h1 style="margin: 0; font-size: 1.8rem; font-weight: 700;">Light Peace Academy</h1>
+      </div>
+      <nav>
+        <ul style="display: flex; list-style: none; margin: 0; padding: 0; gap: 30px;">
+          <li><a href="index.html" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; background: rgba(255,255,255,0.1);">Home</a></li>
+          <li class="dropdown" style="position: relative;">
+            <a href="#" onclick="return false;" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; cursor: pointer;">About</a>
+            <ul class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: white; min-width: 200px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; margin-top: 10px;">
+              <li><a href="history.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">History</a></li>
+              <li><a href="mission.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Mission</a></li>
+              <li><a href="vision.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Vision</a></li>
+              <li><a href="values.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Core Values</a></li>
+              <li><a href="facilities.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Facilities</a></li>
+              <li><a href="achievements.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; transition: all 0.3s ease;">Achievements</a></li>
+            </ul>
+          </li>
+          <li class="dropdown" style="position: relative;">
+            <a href="#" onclick="return false;" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; cursor: pointer; background: rgba(255,215,0,0.2); border: 2px solid #FFD700;">Academic</a>
+            <ul class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: white; min-width: 200px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; margin-top: 10px;">
+              <li><a href="staff.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Staff</a></li>
+              <li><a href="timetable.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Timetable</a></li>
+              <li><a href="homeworks.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Homeworks</a></li>
+              <li><a href="results.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease; background: rgba(255,215,0,0.1);">Results</a></li>
+              <li><a href="resources.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; transition: all 0.3s ease;">Resources</a></li>
+            </ul>
+          </li>
+          <li class="dropdown" style="position: relative;">
+            <a href="#" onclick="return false;" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease; cursor: pointer;">School Life</a>
+            <ul class="dropdown-menu" style="position: absolute; top: 100%; left: 0; background: white; min-width: 200px; border-radius: 10px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: all 0.3s ease; margin-top: 10px;">
+              <li><a href="events.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; border-bottom: 1px solid #eee; transition: all 0.3s ease;">Events</a></li>
+              <li><a href="gallery.html" style="display: block; padding: 12px 20px; color: #0277bd; text-decoration: none; transition: all 0.3s ease;">Gallery</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html" style="color: white; text-decoration: none; font-weight: 600; padding: 10px 15px; border-radius: 25px; transition: all 0.3s ease;">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Results Hero Section -->
+    <section class="academic-hero">
+      <div class="academic-hero-content">
+        <h2>Academic Results & Achievements</h2>
+        <p>Our students consistently achieve outstanding results, demonstrating the effectiveness of our educational approach. We are proud of our academic excellence and the success stories of our graduates.</p>
+
+        <div class="academic-stats-grid">
+          <div class="academic-stat-item">
+            <div class="academic-stat-number counter" data-target="98">0</div>
+            <div class="academic-stat-label">National Pass Rate</div>
+          </div>
+          <div class="academic-stat-item">
+            <div class="academic-stat-number counter" data-target="85">0</div>
+            <div class="academic-stat-label">University Acceptance</div>
+          </div>
+          <div class="academic-stat-item">
+            <div class="academic-stat-number counter" data-target="25">0</div>
+            <div class="academic-stat-label">Average Class Size</div>
+          </div>
+          <div class="academic-stat-item">
+            <div class="academic-stat-number counter" data-target="500">0</div>
+            <div class="academic-stat-label">Students Excelled</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Achievements -->
+    <section class="results-section">
+      <div class="container">
+        <h2>Outstanding Achievements</h2>
+        <p>Our commitment to academic excellence is reflected in remarkable achievements across all subjects and grade levels.</p>
+
+        <div class="results-highlights">
+          <div class="result-highlight">
+            <div class="result-icon">🏆</div>
+            <h3>National Rankings</h3>
+            <p>Consistently ranked among top 5 schools in national examinations with outstanding pass rates and exceptional academic performance.</p>
+            <div class="result-stat">#3</div>
+            <small>National Ranking 2025</small>
+          </div>
+
+          <div class="result-highlight">
+            <div class="result-icon">🎓</div>
+            <h3>University Acceptances</h3>
+            <p>Students accepted to prestigious universities worldwide, including Ivy League and top international institutions across various disciplines.</p>
+            <div class="result-stat">85%</div>
+            <small>Acceptance Rate</small>
+          </div>
+
+          <div class="result-highlight">
+            <div class="result-icon">📈</div>
+            <h3>Grade Improvements</h3>
+            <p>Significant improvement in student grades across all subjects with personalized learning approaches and dedicated academic support.</p>
+            <div class="result-stat">+25%</div>
+            <small>Average Improvement</small>
+          </div>
+
+          <div class="result-highlight">
+            <div class="result-icon">🌟</div>
+            <h3>Subject Excellence</h3>
+            <p>Outstanding performance in STEM subjects, languages, and humanities with students achieving top grades and special recognitions.</p>
+            <div class="result-stat">95%</div>
+            <small>A+ Grades</small>
+          </div>
+
+          <div class="result-highlight">
+            <div class="result-icon">🎖️</div>
+            <h3>Scholarships Awarded</h3>
+            <p>Students securing prestigious scholarships and academic awards for higher education and specialized programs.</p>
+            <div class="result-stat">45</div>
+            <small>Scholarships 2025</small>
+          </div>
+
+          <div class="result-highlight">
+            <div class="result-icon">🏅</div>
+            <h3>Competition Success</h3>
+            <p>Students excelling in national and international academic competitions, Olympiads, and science fairs.</p>
+            <div class="result-stat">120</div>
+            <small>Awards Won</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subject Performance -->
+    <section class="academic-overview">
+      <div class="container">
+        <h2>Subject Performance Overview</h2>
+        <p>Excellent results across all academic disciplines demonstrate comprehensive educational excellence.</p>
+
+        <div class="academic-grid">
+          <div class="academic-card">
+            <div class="academic-card-icon">🔢</div>
+            <h3>Mathematics</h3>
+            <p>98% pass rate with students achieving advanced proficiency and competing in international mathematics competitions.</p>
+          </div>
+
+          <div class="academic-card">
+            <div class="academic-card-icon">🧪</div>
+            <h3>Science</h3>
+            <p>Outstanding performance in physics, chemistry, and biology with 95% of students scoring above national average.</p>
+          </div>
+
+          <div class="academic-card">
+            <div class="academic-card-icon">📚</div>
+            <h3>Languages</h3>
+            <p>Exceptional results in English, Arabic, and additional languages with students achieving native-level proficiency.</p>
+          </div>
+
+          <div class="academic-card">
+            <div class="academic-card-icon">🌍</div>
+            <h3>Social Sciences</h3>
+            <p>Strong performance in history, geography, and social studies with critical thinking and analytical skills development.</p>
+          </div>
+
+          <div class="academic-card">
+            <div class="academic-card-icon">🎨</div>
+            <h3>Arts & Humanities</h3>
+            <p>Creative excellence in visual arts, music, and literature with students winning regional and national competitions.</p>
+          </div>
+
+          <div class="academic-card">
+            <div class="academic-card-icon">⚽</div>
+            <h3>Physical Education</h3>
+            <p>Comprehensive development of physical fitness and sports skills alongside academic achievement.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Performance Statistics -->
+    <section class="academic-stats-section">
+      <div class="container">
+        <h2>Academic Performance Statistics</h2>
+        <p>Comprehensive data showcasing our commitment to academic excellence and continuous improvement.</p>
+
+        <div class="academic-stats-cards">
+          <div class="academic-stat-card">
+            <div class="counter" data-target="98">0</div>
+            <h3>Overall Pass Rate</h3>
+            <p>Above national average</p>
+          </div>
+
+          <div class="academic-stat-card">
+            <div class="counter" data-target="87">0</div>
+            <h3>Grade A+ Students</h3>
+            <p>Exceptional performance</p>
+          </div>
+
+          <div class="academic-stat-card">
+            <div class="counter" data-target">4.8</div>
+            <h3>Average GPA</h3>
+            <p>Out of 5.0 scale</p>
+          </div>
+
+          <div class="academic-stat-card">
+            <div class="counter" data-target">15</div>
+            <h3>Perfect Scores</h3>
+            <p>100% in subjects</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="resources-section">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 60px;">
+          <h2 style="color: #0277bd; font-size: 2.8rem; font-weight: 700; margin-bottom: 20px;">Success Stories</h2>
+          <p style="font-size: 1.2rem; color: #495057; max-width: 700px; margin: 0 auto; line-height: 1.6;">Real achievements from our students demonstrating the impact of quality education and dedicated teaching.</p>
+        </div>
+
+        <div class="resources-grid">
+          <div class="resource-card">
+            <div class="resource-icon">🎓</div>
+            <h3>University Scholarships</h3>
+            <p>Students securing full scholarships to top universities including Harvard, Oxford, and local prestigious institutions.</p>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">🏆</div>
+            <h3>Academic Competitions</h3>
+            <p>Multiple winners in national and international Olympiads, science fairs, and academic competitions.</p>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">🌟</div>
+            <h3>Leadership Roles</h3>
+            <p>Students taking on leadership positions in student government, clubs, and community service initiatives.</p>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">💼</div>
+            <h3>Career Success</h3>
+            <p>Graduates excelling in diverse careers including medicine, engineering, business, and creative fields.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="academic-cta">
+      <div class="academic-cta-content">
+        <h2>Join Our Success Story</h2>
+        <p>Experience the same academic excellence that has led countless students to outstanding achievements and bright futures.</p>
+
+        <div class="academic-cta-buttons">
+          <a href="contact.html" class="academic-btn-primary">
+            <span>📞</span>
+            Enroll Now
+          </a>
+          <a href="academic.html" class="academic-btn-secondary">
+            Explore Academics
+          </a>
+        </div>
+
+        <div class="academic-features">
+          <div class="academic-feature">
+            <div class="academic-feature-icon">🏆</div>
+            <div class="academic-feature-text">Academic Excellence</div>
+          </div>
+          <div class="academic-feature">
+            <div class="academic-feature-icon">🎓</div>
+            <div class="academic-feature-text">University Success</div>
+          </div>
+          <div class="academic-feature">
+            <div class="academic-feature-icon">⭐</div>
+            <div class="academic-feature-text">Outstanding Results</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Light Peace Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+    <section class="hero">
+      <div class="container">
+        <h2>Student Results</h2>
+        <p>View your academic performance and progress reports.</p>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container">
+        <h3>Grade Reports</h3>
+        <p>At Light Peace Academy, we provide detailed grade reports to help students and parents track academic progress. Our grading system is based on continuous assessment, including assignments, quizzes, mid-term exams, and final examinations.</p>
+
+        <h3>Grading Scale</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Grade</th>
+              <th>Percentage</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>A</td>
+              <td>90-100%</td>
+              <td>Excellent</td>
+            </tr>
+            <tr>
+              <td>B</td>
+              <td>80-89%</td>
+              <td>Very Good</td>
+            </tr>
+            <tr>
+              <td>C</td>
+              <td>70-79%</td>
+              <td>Good</td>
+            </tr>
+            <tr>
+              <td>D</td>
+              <td>60-69%</td>
+              <td>Satisfactory</td>
+            </tr>
+            <tr>
+              <td>F</td>
+              <td>Below 60%</td>
+              <td>Fail</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Progress Tracking</h3>
+        <p>We encourage regular communication between teachers, students, and parents. Progress reports are issued quarterly, and parent-teacher conferences are held to discuss individual student performance and areas for improvement.</p>
+
+        <h3>Accessing Results</h3>
+        <p>Results are available through our secure online portal. Parents and students can log in to view detailed reports, including subject-wise breakdowns and comments from teachers. For any questions regarding results, please contact the academic office.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Light Peace Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

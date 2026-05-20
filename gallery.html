@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Light Peace Academy's vibrant photo gallery showcasing student achievements, cultural events, academic excellence, and community spirit. Discover the heart of our educational journey through captivating images.">
+  <meta name="keywords" content="Light Peace Academy, photo gallery, student achievements, school events, academic excellence, educational community, learning moments">
+  <meta name="author" content="Light Peace Academy">
+  <meta property="og:title" content="Gallery - Light Peace Academy">
+  <meta property="og:description" content="Capturing Excellence, One Moment at a Time - Explore our vibrant photo collection showcasing the Light Peace Academy experience.">
+  <meta property="og:image" content="images/principal.jpg">
+  <meta property="og:type" content="website">
+  <title>Gallery - Light Peace Academy | Capturing Excellence, One Moment at a Time</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div>
+        <div>A</div>
+        <h1>Light Peace Academy</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#" onclick="return false;">About</a>
+            <ul class="dropdown-menu">
+              <li><a href="history.html">History</a></li>
+              <li><a href="mission.html">Mission</a></li>
+              <li><a href="vision.html">Vision</a></li>
+              <li><a href="values.html">Core Values</a></li>
+              <li><a href="facilities.html">Facilities</a></li>
+              <li><a href="achievements.html">Achievements</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" onclick="return false;">Academic</a>
+            <ul class="dropdown-menu">
+              <li><a href="staff.html">Staff</a></li>
+              <li><a href="timetable.html">Timetable</a></li>
+              <li><a href="homeworks.html">Homeworks</a></li>
+              <li><a href="results.html">Results</a></li>
+              <li><a href="resources.html">Resources</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" onclick="return false;">School Life</a>
+            <ul class="dropdown-menu">
+              <li><a href="events.html">Events</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<main>
+    <section class="hero">
+      <div class="gallery-badge"></div>
+      <div class="container">
+        <div>
+          <span>✨ Welcome to Our Visual Journey</span>
+        </div>
+        <h2>Capturing Excellence,<br>One Moment at a Time</h2>
+        <p>Immerse yourself in the vibrant tapestry of Light Peace Academy life. From breakthrough discoveries in our labs to triumphant victories on the field, every image tells a story of growth, passion, and community.</p>
+
+        <div>
+          <div>
+            <div>500+</div>
+            <div>Memorable Moments</div>
+            <div>Captured & Cherished</div>
+          </div>
+          <div>
+            <div>14</div>
+            <div>Categories</div>
+            <div>Diverse Experiences</div>
+          </div>
+          <div>
+            <div>365</div>
+            <div>Days of Excellence</div>
+            <div>Every Day Matters</div>
+          </div>
+        </div>
+
+        <div>
+          <a href="#gallery-section">
+            🌟 Explore Our Gallery
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content" id="gallery-section">
+      <div class="container">
+        <!-- Testimonials Section -->
+        <div>
+          <h3>What Our Community Says</h3>
+          <div>
+            <div>
+              <div>★★★★★</div>
+              <p>"The gallery perfectly captures the vibrant spirit of Light Peace Academy. Every photo tells a story of growth, creativity, and community that inspires us all."</p>
+              <div>
+                <div>P</div>
+                <div>
+                  <div>Parent Association</div>
+                  <div>Light Peace Academy Parent</div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>★★★★★</div>
+              <p>"As a teacher, I love seeing our students' achievements showcased so beautifully. The gallery motivates everyone to strive for excellence."</p>
+              <div>
+                <div>T</div>
+                <div>
+                  <div>Teaching Staff</div>
+                  <div>Light Peace Academy Educator</div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>★★★★★</div>
+              <p>"The gallery shows how Light Peace Academy creates leaders of tomorrow. Every image inspires me to be the best version of myself!"</p>
+              <div>
+                <div>S</div>
+                <div>
+                  <div>Student Council</div>
+                  <div>Grade 12 Student</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3>Discover Our World</h3>
+        <p>From the spark of curiosity in our science labs to the thunderous applause at graduation ceremonies, our gallery chronicles the extraordinary journey of learning, growth, and achievement that defines the Light Peace Academy experience.</p>
+
+        <!-- Gallery Filters -->
+        <div>
+          <div>
+            <button class="filter-btn active" data-filter="all">📸 All Photos</button>
+            <button class="filter-btn" data-filter="staff">👨‍🏫 Our Staff</button>
+            <button class="filter-btn" data-filter="events">🎉 School Events</button>
+            <button class="filter-btn" data-filter="activities">🎨 Activities</button>
+            <button class="filter-btn" data-filter="achievements">🏆 Achievements</button>
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item staff" onclick="openLightbox('images/principal.jpg', 'Leadership in Action - Our Principal inspires students every morning with powerful messages about perseverance, kindness, and academic excellence that set the tone for the entire school day.')">
+            <div>
+              <img src="images/principal.jpg" alt="Principal leading morning assembly with inspiring words" loading="lazy">
+              <div class="gallery-badge">👑</div>
+            </div>
+            <div class="gallery-overlay">
+              <p>Leadership in Action</p>
+              <p>Our Principal inspires students every morning with powerful messages about perseverance, kindness, and academic excellence.</p>
+            </div>
+          </div>
+          <div class="gallery-item staff" onclick="openLightbox('images/math-teacher.jpg', 'Math Magic Unleashed - Dedicated mathematics educator making complex equations accessible and exciting for all students through innovative teaching methods and real-world applications.')">
+            <div>
+              <img src="images/math-teacher.jpg" alt="Mathematics teacher explaining complex equations with passion">
+              <div>🔢</div>
+            </div>
+            <div class="overlay">
+              <p>Math Magic Unleashed</p>
+              <p>Dedicated mathematics educator making complex equations accessible and exciting through innovative teaching methods.</p>
+            </div>
+          </div>
+          <div class="gallery-item staff" onclick="openLightbox('images/science-teacher.jpg', 'Scientific Discovery - Passionate science educator fostering curiosity and critical thinking through hands-on experiments and real-world problem-solving activities in our well-equipped laboratory.')">
+            <div>
+              <img src="images/science-teacher.jpg" alt="Science teacher conducting exciting experiments in the lab">
+              <div>🧪</div>
+            </div>
+            <div class="overlay">
+              <p>Scientific Discovery</p>
+              <p>Passionate science educator fostering curiosity through hands-on experiments and real-world problem-solving.</p>
+            </div>
+          </div>
+          <div class="gallery-item staff" onclick="openLightbox('images/english-teacher.jpg', 'Words That Inspire - English literature specialist bringing classic and contemporary works to life, developing students communication skills and fostering a lifelong love of reading and writing.')">
+            <div>
+              <img src="images/english-teacher.jpg" alt="English teacher bringing literature to life through storytelling">
+              <div>📚</div>
+            </div>
+            <div class="overlay">
+              <p>Words That Inspire</p>
+              <p>English literature specialist bringing classic works to life and developing strong communication skills.</p>
+            </div>
+          </div>
+          <div class="gallery-item staff" onclick="openLightbox('images/history-teacher.jpg', 'Journey Through Time - History educator connecting past events to present-day understanding, helping students appreciate diverse cultures and the importance of learning from historical lessons.')">
+            <div>
+              <img src="images/history-teacher.jpg" alt="History teacher making the past come alive for students">
+              <div>🏛️</div>
+            </div>
+            <div class="overlay">
+              <p>Journey Through Time</p>
+              <p>History educator connecting past events to present understanding and cultural appreciation.</p>
+            </div>
+          </div>
+          <div class="gallery-item staff" onclick="openLightbox('images/korean-teacher.jpg', 'Cultural Connections - Korean language and culture specialist promoting global awareness and cross-cultural understanding through immersive language instruction and cultural activities.')">
+            <div>
+              <img src="images/korean-teacher.jpg" alt="Korean language teacher sharing cultural traditions">
+              <div>🌏</div>
+            </div>
+            <div class="overlay">
+              <p>Cultural Connections</p>
+              <p>Korean language specialist promoting global awareness and cross-cultural understanding.</p>
+            </div>
+          </div>
+          <div class="gallery-item activities" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';" onclick="openLightbox('images/WhatsApp Image 2025-09-04 at 19.37.26_ef5cf3a4.jpg', 'Teamwork Triumphs - Students collaborating on a challenging group project, demonstrating the power of collective effort, communication skills, and shared problem-solving in our dynamic learning environment.')">
+            <div>
+              <img src="images/WhatsApp Image 2025-09-04 at 19.37.26_ef5cf3a4.jpg" alt="Students collaborating on a group project with enthusiasm">
+              <div>🤝</div>
+            </div>
+            <div class="overlay">
+              <p>Teamwork Triumphs</p>
+              <p>Students collaborating on group projects, building essential communication and problem-solving skills.</p>
+            </div>
+          </div>
+          <div class="gallery-item activities" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';" onclick="openLightbox('images/WhatsApp Image 2025-09-04 at 19.40.07_795bdbd8.jpg', 'Creative Expressions - Art class in full creative flow with students exploring various mediums, developing artistic skills, and expressing their unique perspectives through visual storytelling and imagination.')">
+            <div>
+              <img src="images/WhatsApp Image 2025-09-04 at 19.40.07_795bdbd8.jpg" alt="Art class in full creative flow with colorful masterpieces">
+              <div>🎨</div>
+            </div>
+            <div class="overlay">
+              <p>Creative Expressions</p>
+              <p>Art class exploring various mediums and developing artistic skills through creative expression.</p>
+            </div>
+          </div>
+          <div class="gallery-item events" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';" onclick="openLightbox('images/WhatsApp Image 2025-09-04 at 19.47.24_f7315c0a.jpg', 'Victory Moments - Exciting sports day showcasing athletic excellence, teamwork, and school spirit as students compete in various track and field events with enthusiasm and determination.')">
+            <div>
+              <img src="images/WhatsApp Image 2025-09-04 at 19.47.24_f7315c0a.jpg" alt="Sports day excitement with students cheering and competing">
+              <div>🏃</div>
+            </div>
+            <div class="overlay">
+              <p>Victory Moments</p>
+              <p>Sports day showcasing athletic excellence, teamwork, and school spirit in track and field events.</p>
+            </div>
+          </div>
+          <div class="gallery-item events" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';" onclick="openLightbox('images/WhatsApp Image 2025-09-04 at 19.58.54_a3cf44e0.jpg', 'Cultural Celebration - Vibrant cultural festival featuring traditional dances, music, and performances that celebrate diverse heritages and promote cross-cultural understanding among our global community.')">
+            <div>
+              <img src="images/WhatsApp Image 2025-09-04 at 19.58.54_a3cf44e0.jpg" alt="Cultural festival showcasing traditional dances and music">
+              <div>🎪</div>
+            </div>
+            <div class="overlay">
+              <p>Cultural Celebration</p>
+              <p>Cultural festival featuring traditional dances and music celebrating diverse heritages.</p>
+            </div>
+          </div>
+          <div class="gallery-item achievements" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';" onclick="openLightbox('images/IMG-20250904-WA0017.jpg', 'Innovation Showcase - Proud science fair winners displaying their innovative projects and creative solutions, demonstrating exceptional research skills and scientific thinking developed through our STEM program.')">
+            <div>
+              <img src="images/IMG-20250904-WA0017.jpg" alt="Science fair winners proudly displaying their innovative projects">
+              <div>💡</div>
+            </div>
+            <div class="overlay">
+              <p>Innovation Showcase</p>
+              <p>Science fair winners displaying innovative projects and exceptional research skills.</p>
+            </div>
+          </div>
+          <div class="gallery-item activities" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';" onclick="openLightbox('images/IMG-20250904-WA0018.jpg', 'Musical Harmony - Music class creating beautiful harmony as students learn to play various instruments together, developing rhythm, coordination, and appreciation for musical expression and collaboration.')">
+            <div>
+              <img src="images/IMG-20250904-WA0018.jpg" alt="Music class harmony with students playing instruments together">
+              <div>🎵</div>
+            </div>
+            <div class="overlay">
+              <p>Musical Harmony</p>
+              <p>Music class creating harmony while developing rhythm, coordination, and musical collaboration.</p>
+            </div>
+          </div>
+          <div class="gallery-item events" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';" onclick="openLightbox('images/IMG_20250928_212658_606.jpg', 'Giving Back - Community service project making a positive impact in our neighborhood, teaching students the importance of civic responsibility, empathy, and contributing to the greater good of our local community.')">
+            <div>
+              <img src="images/IMG_20250928_212658_606.jpg" alt="Community service project making a positive impact in the neighborhood">
+              <div>❤️</div>
+            </div>
+            <div class="overlay">
+              <p>Giving Back</p>
+              <p>Community service project teaching civic responsibility and contributing to the local community.</p>
+            </div>
+          </div>
+          <div class="gallery-item achievements" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';" onclick="openLightbox('images/Screenshot_20250416-191656.png', 'Future of Learning - Digital learning experience showcasing interactive educational technology that prepares students for the modern world, combining traditional knowledge with cutting-edge digital tools and innovative teaching methods.')">
+            <div>
+              <img src="images/Screenshot_20250416-191656.png" alt="Digital learning experience with interactive educational technology">
+              <div>🚀</div>
+            </div>
+            <div class="overlay">
+              <p>Future of Learning</p>
+              <p>Digital learning experience combining traditional knowledge with cutting-edge educational technology.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-info">
+          <h3>Join Our Visual Story</h3>
+          <p>Our gallery grows with every smile, every achievement, and every moment of discovery. New memories are captured daily, so visit often to see the latest chapters of our Light Peace Academy story!</p>
+
+          <div>
+            <a href="contact.html">
+              📸 Share Your Photos
+            </a>
+            <a href="events.html">
+              🎉 Upcoming Events
+            </a>
+          </div>
+
+          <div>
+            <p>"Every photograph tells a story of growth, learning, and community at Light Peace Academy."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox">
+    <div>
+      <img id="lightbox-img" src="" alt="">
+      <div id="lightbox-caption"></div>
+      <button onclick="closeLightbox()">×</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div>
+        <!-- School Info -->
+        <div>
+          <h4>Light Peace Academy</h4>
+          <p>Nurturing young minds, building bright futures, and creating lifelong learners in a supportive and innovative educational environment.</p>
+          <div>
+            <a href="#" onmouseover="this.style.transform='scale(1.2)'; this.style.color='#FFD700';" onmouseout="this.style.transform='scale(1)'; this.style.color='white';">📘</a>
+            <a href="#" onmouseover="this.style.transform='scale(1.2)'; this.style.color='#FFD700';" onmouseout="this.style.transform='scale(1)'; this.style.color='white';">📷</a>
+            <a href="#" onmouseover="this.style.transform='scale(1.2)'; this.style.color='#FFD700';" onmouseout="this.style.transform='scale(1)'; this.style.color='white';">🎥</a>
+            <a href="#" onmouseover="this.style.transform='scale(1.2)'; this.style.color='#FFD700';" onmouseout="this.style.transform='scale(1)'; this.style.color='white';">📧</a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html" onmouseover="this.style.opacity='1'; this.style.paddingLeft='10px';" onmouseout="this.style.opacity='0.9'; this.style.paddingLeft='0';">🏠 Home</a></li>
+            <li><a href="about.html" onmouseover="this.style.opacity='1'; this.style.paddingLeft='10px';" onmouseout="this.style.opacity='0.9'; this.style.paddingLeft='0';">ℹ️ About Us</a></li>
+            <li><a href="academic.html" onmouseover="this.style.opacity='1'; this.style.paddingLeft='10px';" onmouseout="this.style.opacity='0.9'; this.style.paddingLeft='0';">🎓 Academics</a></li>
+            <li><a href="events.html" onmouseover="this.style.opacity='1'; this.style.paddingLeft='10px';" onmouseout="this.style.opacity='0.9'; this.style.paddingLeft='0';">🎉 Events</a></li>
+            <li><a href="gallery.html" onmouseover="this.style.opacity='1'; this.style.paddingLeft='10px';" onmouseout="this.style.opacity='0.9'; this.style.paddingLeft='0';">📸 Gallery</a></li>
+            <li><a href="contact.html" onmouseover="this.style.opacity='1'; this.style.paddingLeft='10px';" onmouseout="this.style.opacity='0.9'; this.style.paddingLeft='0';">📞 Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4>Get In Touch</h4>
+          <div>
+            <div>
+              <span>📍</span>
+              <span>123 Education Street<br>Learning City, LC 12345</span>
+            </div>
+            <div>
+              <span>📞</span>
+              <span>+1 (555) 123-LPA</span>
+            </div>
+            <div>
+              <span>✉️</span>
+              <span>info@lightpeaceacademy.edu</span>
+            </div>
+            <div>
+              <span>🕒</span>
+              <span>Mon-Fri: 8:00 AM - 5:00 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div>
+          <h4>Stay Connected</h4>
+          <p>Subscribe to our newsletter for the latest updates, events, and achievements from Light Peace Academy.</p>
+          <div>
+            <input type="email" placeholder="Your email address">
+            <button onmouseover="this.style.background='#FFA500'; this.style.transform='scale(1.05)';" onmouseout="this.style.background='#FFD700'; this.style.transform='scale(1)';">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <span>🏆 Excellence in Education Since 2010</span>
+          <span>🌟 Building Tomorrow's Leaders Today</span>
+          <span>❤️ Where Learning Meets Inspiration</span>
+        </div>
+        <p>&copy; 2025 Light Peace Academy. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+  <script>
+    // Enhanced Gallery Filter Functionality with Animations
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+
+      // Add loading animation to gallery items
+      galleryItems.forEach((item, index) => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(30px)';
+        setTimeout(() => {
+          item.style.transition = 'all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+          item.style.opacity = '1';
+          item.style.transform = 'translateY(0)';
+        }, index * 100);
+      });
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => {
+            btn.classList.remove('active');
+            btn.style.background = 'transparent';
+            btn.style.color = '#058fca';
+            btn.style.transform = 'scale(1)';
+          });
+
+          // Add active class to clicked button
+          this.classList.add('active');
+          this.style.background = '#058fca';
+          this.style.color = 'white';
+          this.style.transform = 'scale(1.05)';
+
+          const filterValue = this.getAttribute('data-filter');
+
+          galleryItems.forEach((item, index) => {
+            if (filterValue === 'all' || item.classList.contains(filterValue)) {
+              setTimeout(() => {
+                item.style.display = 'block';
+                item.style.opacity = '1';
+                item.style.transform = 'scale(1) translateY(0)';
+              }, index * 50);
+            } else {
+              item.style.opacity = '0';
+              item.style.transform = 'scale(0.8) translateY(20px)';
+              setTimeout(() => {
+                item.style.display = 'none';
+              }, 300);
+            }
+          });
+        });
+      });
+
+      // Add scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, observerOptions);
+
+      // Observe elements for scroll animations
+      document.querySelectorAll('.gallery-item, .testimonial-card').forEach(item => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(30px)';
+        item.style.transition = 'all 0.6s ease';
+        observer.observe(item);
+      });
+
+      // Add smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+
+      // Add loading state for images
+      const images = document.querySelectorAll('.gallery-item img');
+      images.forEach(img => {
+        img.addEventListener('load', function() {
+          this.style.opacity = '1';
+        });
+        img.style.opacity = '0';
+        img.style.transition = 'opacity 0.3s ease';
+      });
+    });
+
+    // Enhanced Lightbox Functionality
+    function openLightbox(imageSrc, caption) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxCaption = document.getElementById('lightbox-caption');
+
+      // Add loading animation
+      lightboxImg.style.opacity = '0';
+      lightboxImg.src = imageSrc;
+      lightboxCaption.innerHTML = caption.replace(' - ', '<br><small>').replace(/\.$/, '</small>');
+      lightbox.style.display = 'flex';
+
+      // Fade in image
+      lightboxImg.onload = function() {
+        this.style.transition = 'opacity 0.3s ease';
+        this.style.opacity = '1';
+      };
+
+      // Prevent body scroll when lightbox is open
+      document.body.style.overflow = 'hidden';
+
+      // Add entrance animation
+      lightbox.style.animation = 'lightboxFadeIn 0.3s ease';
+    }
+
+    function closeLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      lightbox.style.animation = 'lightboxFadeOut 0.3s ease';
+      setTimeout(() => {
+        lightbox.style.display = 'none';
+      }, 300);
+
+      // Restore body scroll
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close lightbox when clicking outside the image
+    document.getElementById('lightbox').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeLightbox();
+      }
+    });
+
+    // Close lightbox with Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeLightbox();
+      }
+    });
+
+    // Add keyboard navigation for gallery
+    document.addEventListener('keydown', function(e) {
+      const lightbox = document.getElementById('lightbox');
+      if (lightbox.style.display === 'flex') {
+        // Add arrow key navigation if needed in future
+      }
+    });
+  </script>
+
+  <style>
+    /* Additional CSS for animations */
+    @keyframes lightboxFadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes lightboxFadeOut {
+      from { opacity: 1; }
+      to { opacity: 0; }
+    }
+
+    .gallery-item:hover {
+      animation: none; /* Remove default hover animation */
+    }
+
+    /* Loading animation for gallery items */
+    .gallery-item {
+      animation: fadeInUp 0.6s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Enhanced button hover effects */
+    .filter-btn:hover {
+      transform: translateY(-2px) !important;
+      box-shadow: 0 8px 25px rgba(5,143,202,0.4) !important;
+    }
+
+    /* Smooth transitions for all interactive elements */
+    * {
+      scroll-behavior: smooth;
+    }
+  </style>
+</body>
+</html>
+
