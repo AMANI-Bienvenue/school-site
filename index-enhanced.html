@@ -8,8 +8,9 @@
   <meta name="author" content="Light Peace Academy">
   <meta property="og:title" content="Light Peace Academy - Excellent Working For Success">
   <meta property="og:description" content="Empowering young minds and shaping futures since 1995. Join our community of excellence, innovation, and growth.">
-  <meta property="og:image" content="images/principal.jpg">
   <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0264a8">
+  
   <title>Light Peace Academy - Excellent Working For Success</title>
 
   <!-- DNS prefetch and preconnect for performance -->
@@ -20,15 +21,14 @@
   <!-- Preload critical resources -->
   <link rel="preload" href="style-enhanced.css" as="style">
   <link rel="preload" href="js/script-enhanced.js" as="script">
-  <link rel="preload" href="images/principal.jpg" as="image">
 
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-  <!-- Fonts with font-display: swap for faster loading -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Enhanced Professional Stylesheet -->
+  <!-- Enhanced Stylesheet -->
   <link rel="stylesheet" href="style-enhanced.css">
 
   <!-- Skip to main content (accessibility) -->
@@ -44,16 +44,25 @@
     </div>
   </div>
 
+  <!-- Header Navigation -->
   <header role="banner">
     <div class="container header-container">
+      <!-- Logo Section -->
       <div class="logo">
         <div class="logo-icon" aria-label="School Logo">LPA</div>
         <h1 class="logo-text">Light Peace Academy</h1>
       </div>
-      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleMobileMenu()">☰</button>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleMobileMenu()">
+        <span>☰</span>
+      </button>
+
+      <!-- Main Navigation -->
       <nav id="main-nav" role="navigation" aria-label="Main navigation">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
+          
           <li class="dropdown">
             <a href="#" onclick="return false;">About</a>
             <ul class="dropdown-menu">
@@ -65,6 +74,7 @@
               <li><a href="achievements.html">Achievements</a></li>
             </ul>
           </li>
+
           <li class="dropdown">
             <a href="#" onclick="return false;">Academic</a>
             <ul class="dropdown-menu">
@@ -75,6 +85,7 @@
               <li><a href="resources.html">Resources</a></li>
             </ul>
           </li>
+
           <li class="dropdown">
             <a href="#" onclick="return false;">School Life</a>
             <ul class="dropdown-menu">
@@ -82,24 +93,35 @@
               <li><a href="gallery.html">Gallery</a></li>
             </ul>
           </li>
+
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+
+      <!-- Theme Toggle -->
       <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode (Alt + T)">
         <span class="theme-icon">🌙</span>
       </button>
     </div>
   </header>
 
+  <!-- Main Content -->
   <main id="main-content">
+    <!-- Hero Section -->
     <section class="hero" role="region" aria-label="Hero banner">
       <div class="container">
+        <!-- Hero Content -->
         <div class="hero-content">
           <div class="hero-badge">
             <span>🌟 Welcome to Excellence</span>
           </div>
+
           <h2 class="hero-title">Nurturing Excellence,<br>Inspiring Futures</h2>
-          <p class="hero-subtitle">Empowering young minds and shaping futures since 1995. Join our vibrant community where academic excellence meets personal growth in an environment of innovation and care.</p>
+
+          <p class="hero-subtitle">
+            Empowering young minds and shaping futures since 1995. Join our vibrant community 
+            where academic excellence meets personal growth in an environment of innovation and care.
+          </p>
 
           <!-- Statistics -->
           <div class="hero-stats">
@@ -117,12 +139,14 @@
             </div>
           </div>
 
+          <!-- Call-to-Action Buttons -->
           <div class="btn-group">
             <a href="about.html" class="btn btn-primary">🎓 Learn More About Us</a>
             <a href="#features" class="btn btn-secondary">📖 Explore Features</a>
           </div>
         </div>
 
+        <!-- Hero Image Slider -->
         <div class="slider">
           <div class="slides">
             <img src="images/IMG_20250928_212658_606.jpg" alt="Light Peace Academy Campus" class="active" loading="lazy">
@@ -139,24 +163,32 @@
       </div>
     </section>
 
+    <!-- About & Features Section -->
     <section class="about" id="features" role="region" aria-label="Why choose us">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Why Choose Light Peace Academy?</h2>
-          <p class="section-subtitle">Light Peace Academy is dedicated to providing a nurturing environment where students can thrive academically, socially, and personally. Our commitment to excellence is reflected in our innovative curriculum, dedicated faculty, and state-of-the-art facilities.</p>
+          <p class="section-subtitle">
+            Light Peace Academy is dedicated to providing a nurturing environment where students can thrive 
+            academically, socially, and personally. Our commitment to excellence is reflected in our innovative 
+            curriculum, dedicated faculty, and state-of-the-art facilities.
+          </p>
         </div>
 
+        <!-- Features Grid -->
         <div class="features">
           <article class="feature">
             <div class="feature-icon">🎓</div>
             <h3 class="feature-title">Quality Education</h3>
             <p>We offer a comprehensive curriculum designed to prepare students for success in higher education and beyond, combining academic rigor with practical skills.</p>
           </article>
+
           <article class="feature">
             <div class="feature-icon">👨‍🏫</div>
             <h3 class="feature-title">Experienced Faculty</h3>
             <p>Our teachers are passionate educators committed to inspiring and guiding each student's unique potential through personalized attention and mentorship.</p>
           </article>
+
           <article class="feature">
             <div class="feature-icon">🏢</div>
             <h3 class="feature-title">Modern Facilities</h3>
@@ -164,7 +196,7 @@
           </article>
         </div>
 
-        <!-- Achievement Stats -->
+        <!-- Achievement Statistics -->
         <div class="achievement-stats">
           <h3 class="achievement-title">Our Impact in Numbers</h3>
           <div class="stats-grid">
@@ -193,13 +225,18 @@
       </div>
     </section>
 
+    <!-- Quick Links Section -->
     <section class="quick-links" role="region" aria-label="Quick navigation links">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Explore Light Peace Academy</h2>
-          <p class="section-subtitle">Discover the various aspects of our vibrant school community and find everything you need to support your educational journey.</p>
+          <p class="section-subtitle">
+            Discover the various aspects of our vibrant school community and find everything 
+            you need to support your educational journey.
+          </p>
         </div>
 
+        <!-- Quick Links Grid -->
         <div class="links">
           <a href="staff.html" class="link-card">
             <div>
@@ -209,6 +246,7 @@
               <div class="link-cta">→ Explore Team</div>
             </div>
           </a>
+
           <a href="timetable.html" class="link-card">
             <div>
               <div class="link-icon">📅</div>
@@ -217,6 +255,7 @@
               <div class="link-cta">→ View Schedule</div>
             </div>
           </a>
+
           <a href="events.html" class="link-card">
             <div>
               <div class="link-icon">🎉</div>
@@ -225,6 +264,7 @@
               <div class="link-cta">→ View Events</div>
             </div>
           </a>
+
           <a href="gallery.html" class="link-card">
             <div>
               <div class="link-icon">📸</div>
@@ -233,25 +273,7 @@
               <div class="link-cta">→ View Gallery</div>
             </div>
           </a>
-        </div>
-      </div>
-    </section>
-          <a href="events.html" class="link-card" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: 40px 30px; border-radius: 20px; text-decoration: none; color: #0277bd; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); box-shadow: 0 8px 25px rgba(0,0,0,0.1); border: 2px solid transparent; display: block;" onmouseover="this.style.transform='translateY(-10px) scale(1.02)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.15)'; this.style.borderColor='#28a745';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.1)'; this.style.borderColor='transparent';">
-            <div style="text-align: center;">
-              <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #28a745, #20c997); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem; color: white;">🎉</div>
-              <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 15px;">School Events</h3>
-              <p style="margin: 0; line-height: 1.6; opacity: 0.8;">Stay updated on upcoming activities, celebrations, and special events in our community.</p>
-              <div style="margin-top: 20px; font-weight: 600; color: #28a745;">→ Upcoming Events</div>
-            </div>
-          </a>
-          <a href="gallery.html" class="link-card" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: 40px 30px; border-radius: 20px; text-decoration: none; color: #0277bd; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); box-shadow: 0 8px 25px rgba(0,0,0,0.1); border: 2px solid transparent; display: block;" onmouseover="this.style.transform='translateY(-10px) scale(1.02)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.15)'; this.style.borderColor='#dc3545';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.1)'; this.style.borderColor='transparent';">
-            <div style="text-align: center;">
-              <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #dc3545, #c82333); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem; color: white;">📸</div>
-              <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 15px;">Photo Gallery</h3>
-              <p style="margin: 0; line-height: 1.6; opacity: 0.8;">Browse memories and highlights from our school community in our interactive gallery.</p>
-              <div style="margin-top: 20px; font-weight: 600; color: #dc3545;">→ View Gallery</div>
-            </div>
-          </a>
+
           <a href="resources.html" class="link-card">
             <div>
               <div class="link-icon">📚</div>
@@ -260,6 +282,7 @@
               <div class="link-cta">→ Access Resources</div>
             </div>
           </a>
+
           <a href="contact.html" class="link-card">
             <div>
               <div class="link-icon">📞</div>
@@ -272,13 +295,17 @@
       </div>
     </section>
 
+    <!-- Testimonials Section -->
     <section class="testimonials" role="region" aria-label="What our community says">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">What Our Community Says</h2>
-          <p class="section-subtitle">Hear from our students, parents, and alumni about their experiences at Light Peace Academy.</p>
+          <p class="section-subtitle">
+            Hear from our students, parents, and alumni about their experiences at Light Peace Academy.
+          </p>
         </div>
 
+        <!-- Testimonials Grid -->
         <div class="testimonials-grid">
           <article class="testimonial">
             <div class="testimonial-header">
@@ -288,7 +315,10 @@
                 <span class="testimonial-role">Parent</span>
               </div>
             </div>
-            <p class="testimonial-text">"Light Peace Academy has transformed my daughter's confidence and love for learning. The teachers are dedicated and the environment is nurturing."</p>
+            <p class="testimonial-text">
+              "Light Peace Academy has transformed my daughter's confidence and love for learning. 
+              The teachers are dedicated and the environment is nurturing."
+            </p>
             <div class="testimonial-rating" aria-label="5 star rating">★★★★★</div>
           </article>
 
@@ -300,7 +330,10 @@
                 <span class="testimonial-role">Parent</span>
               </div>
             </div>
-            <p class="testimonial-text">"The academic excellence combined with extracurricular activities makes this school outstanding. My son has grown so much here."</p>
+            <p class="testimonial-text">
+              "The academic excellence combined with extracurricular activities makes this school outstanding. 
+              My son has grown so much here."
+            </p>
             <div class="testimonial-rating" aria-label="5 star rating">★★★★★</div>
           </article>
 
@@ -312,24 +345,31 @@
                 <span class="testimonial-role">Alumni</span>
               </div>
             </div>
-            <p class="testimonial-text">"Light Peace Academy prepared me not just academically, but also gave me the confidence to pursue my dreams. I'm forever grateful for the foundation I received here."</p>
+            <p class="testimonial-text">
+              "Light Peace Academy prepared me not just academically, but also gave me the confidence 
+              to pursue my dreams. I'm forever grateful for the foundation I received here."
+            </p>
             <div class="testimonial-rating" aria-label="5 star rating">★★★★★</div>
           </article>
         </div>
       </div>
     </section>
-
   </main>
 
+  <!-- Footer -->
   <footer role="contentinfo">
     <div class="container">
       <div class="footer-content">
+        <!-- About Footer Section -->
         <div class="footer-section">
           <h3 class="footer-title">
             <span class="footer-icon">🏫</span>
             Light Peace Academy
           </h3>
-          <p class="footer-description">Nurturing minds, building futures, and creating leaders of tomorrow through excellence in education and character development.</p>
+          <p class="footer-description">
+            Nurturing minds, building futures, and creating leaders of tomorrow through 
+            excellence in education and character development.
+          </p>
           <div class="social-links">
             <a href="#facebook" class="social-link" aria-label="Facebook">📘</a>
             <a href="#instagram" class="social-link" aria-label="Instagram">📷</a>
@@ -338,6 +378,7 @@
           </div>
         </div>
 
+        <!-- Quick Links Footer Section -->
         <div class="footer-section">
           <h4 class="footer-section-title">Quick Links</h4>
           <ul>
@@ -349,6 +390,7 @@
           </ul>
         </div>
 
+        <!-- Resources Footer Section -->
         <div class="footer-section">
           <h4 class="footer-section-title">Resources</h4>
           <ul>
@@ -360,6 +402,7 @@
           </ul>
         </div>
 
+        <!-- Contact Info Footer Section -->
         <div class="footer-section">
           <h4 class="footer-section-title">Contact Info</h4>
           <div class="contact-item">
@@ -384,13 +427,14 @@
         </div>
       </div>
 
+      <!-- Footer Bottom -->
       <div class="footer-bottom">
         <p>&copy; 2025 Light Peace Academy. All rights reserved. | Designed with ❤️ for educational excellence.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Enhanced Professional JavaScript -->
+  <!-- Enhanced JavaScript -->
   <script src="js/script-enhanced.js" defer></script>
 </body>
 </html>
